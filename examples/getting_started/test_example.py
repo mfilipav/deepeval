@@ -7,13 +7,6 @@ from deepeval.metrics import AnswerRelevancyMetric, GEval
 
 # To run this file: deepeval test run <file_name>.py
 
-dataset = EvaluationDataset(alias="My dataset", test_cases=[])
-
-
-@pytest.mark.parametrize(
-    "test_case",
-    dataset,
-)
 def test_everything(test_case: LLMTestCase):
     test_case = LLMTestCase(
         input="What if these shoes don't fit?",

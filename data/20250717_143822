@@ -1,0 +1,30 @@
+{
+    "conversationalTestCases": [],
+    "evaluationCost": 0.00045480000000000005,
+    "metricsScores": [],
+    "runDuration": 0.0,
+    "testCases": [
+        {
+            "actualOutput": "A persistent cough and fever could be viral lung infection or pneumonia. See your doctor for further help.",
+            "evaluationCost": 0.00045480000000000005,
+            "expectedOutput": "A persistent cough and fever could indicate a range of illnesses, from a mild viral infection to more serious conditions like pneumonia or COVID-19. You should seek medical attention if it persists.",
+            "input": "I have a persistent cough and fever. Should I be worried?",
+            "metricsData": [
+                {
+                    "evaluationCost": 0.00045480000000000005,
+                    "evaluationModel": "gpt-4.1-mini",
+                    "name": "Correctness [GEval]",
+                    "reason": "The actual output partially covers the expected content by mentioning viral lung infection and pneumonia but omits key elements like the range of illnesses, COVID-19, and the conditional advice to seek medical attention if symptoms persist. The format and order differ, and the actual output is less detailed, reducing alignment with the expected output.",
+                    "score": 0.3437823499114202,
+                    "strictMode": false,
+                    "success": false,
+                    "threshold": 0.5,
+                    "verboseLogs": "Criteria:\nDetermine if the 'actual output' is correct based on the 'expected output'. \n \nEvaluation Steps:\n[\n    \"Compare the actual output directly with the expected output for exact match.\",\n    \"Verify that the actual output contains all required elements present in the expected output.\",\n    \"Check that the order and format of the actual output align with the expected output specifications.\",\n    \"Confirm that any differences between actual and expected outputs do not affect the correctness of the result.\"\n] \n \nRubric:\nNone \n \nScore: 0.3437823499114202 \n \nReason: The actual output partially covers the expected content by mentioning viral lung infection and pneumonia but omits key elements like the range of illnesses, COVID-19, and the conditional advice to seek medical attention if symptoms persist. The format and order differ, and the actual output is less detailed, reducing alignment with the expected output."
+                }
+            ],
+            "name": "test_correctness",
+            "runDuration": 3.4963879589922726,
+            "success": false
+        }
+    ]
+}

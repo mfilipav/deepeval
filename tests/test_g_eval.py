@@ -54,7 +54,7 @@ def test_g_eval_with_criteria():
         #     Rubric(score_range=(10,10), expected_outcome="100% correct."),
         # ],
         model=GPTModel(
-            model_name="gpt-4.1",
+            model_name="gpt-4.1-mini",
             temperature=0.0,
         ),
         threshold=0.6,

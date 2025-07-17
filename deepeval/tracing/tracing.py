@@ -78,7 +78,6 @@ class TraceManager:
         self._daemon = (
             False if os.getenv(CONFIDENT_TRACE_FLUSH) == "YES" else True
         )
-        self.evaluating = False
 
         # trace manager attributes
         self.confident_api_key = None
@@ -91,6 +90,12 @@ class TraceManager:
         self.sampling_rate = os.environ.get(CONFIDENT_SAMPLE_RATE, 1)
         validate_sampling_rate(self.sampling_rate)
         self.openai_client = None
+
+        # Evals
+        self.evaluating = False
+        self.evaluation_loop = False
+        self.traces_to_evaluate_order: List[str] = []
+        self.traces_to_evaluate: List[Trace] = []
 
         # Register an exit handler to warn about unprocessed traces
         atexit.register(self._warn_on_exit)
@@ -153,6 +158,8 @@ class TraceManager:
         )
         self.active_traces[trace_uuid] = new_trace
         self.traces.append(new_trace)
+        if self.evaluation_loop:
+            self.traces_to_evaluate_order.append(trace_uuid)
         return new_trace
 
     def end_trace(self, trace_uuid: str):
@@ -172,11 +179,20 @@ class TraceManager:
             if not self.evaluating:
                 self.post_trace(trace)
             else:
-                # print(f"Ending trace: {trace.root_spans}")
-                self.environment = Environment.TESTING
-                trace.root_spans = [trace.root_spans[0].children[0]]
-                for root_span in trace.root_spans:
-                    root_span.parent_uuid = None
+                if self.evaluation_loop:
+                    if trace_uuid in self.traces_to_evaluate_order:
+                        self.traces_to_evaluate.append(trace)
+                        self.traces_to_evaluate.sort(
+                            key=lambda t: self.traces_to_evaluate_order.index(
+                                t.uuid
+                            )
+                        )
+                else:
+                    # print(f"Ending trace: {trace.root_spans}")
+                    self.environment = Environment.TESTING
+                    trace.root_spans = [trace.root_spans[0].children[0]]
+                    for root_span in trace.root_spans:
+                        root_span.parent_uuid = None
 
             # Remove from active traces
             del self.active_traces[trace_uuid]
@@ -369,7 +385,7 @@ class TraceManager:
                     api = Api(api_key=self.confident_api_key)
                     response = await api.a_send_request(
                         method=HttpMethods.POST,
-                        endpoint=Endpoints.TRACING_ENDPOINT,
+                        endpoint=Endpoints.TRACES_ENDPOINT,
                         body=body,
                     )
                     queue_size = self._trace_queue.qsize()
@@ -457,7 +473,7 @@ class TraceManager:
                     api = Api(api_key=self.confident_api_key)
                     resp = api.send_request(
                         method=HttpMethods.POST,
-                        endpoint=Endpoints.TRACING_ENDPOINT,
+                        endpoint=Endpoints.TRACES_ENDPOINT,
                         body=body,
                     )
                     qs = self._trace_queue.qsize()
@@ -474,6 +490,35 @@ class TraceManager:
                         message="Error flushing remaining trace(s)",
                         description=str(e),
                     )
+
+    def create_nested_spans_dict(self, span: BaseSpan) -> Dict[str, Any]:
+        api_span = self._convert_span_to_api_span(span)
+        trace_dict = api_span.__dict__.copy()
+
+        # Remove specific keys
+        for key in (
+            "uuid",
+            "trace_uuid",
+            "parent_uuid",
+            "end_time",
+            "start_time",
+            "status",
+            "llm_test_case",
+            "metrics_data",
+            "metric_collection",
+            "metadata",
+        ):
+            trace_dict.pop(key, None)
+
+        # Remove all keys with None values
+        trace_dict = {k: v for k, v in trace_dict.items() if v is not None}
+
+        trace_dict["children"] = []
+        for child in span.children or []:
+            child_api_span = self.create_nested_spans_dict(child)
+            trace_dict["children"].append(child_api_span)
+
+        return trace_dict
 
     def create_trace_api(self, trace: Trace) -> TraceApi:
         # Initialize empty lists for each span type
@@ -544,6 +589,7 @@ class TraceManager:
             startTime=start_time,
             endTime=end_time,
             metadata=trace.metadata,
+            name=trace.name,
             tags=trace.tags,
             environment=self.environment,
             threadId=trace.thread_id,
@@ -553,7 +599,7 @@ class TraceManager:
             feedback=convert_feedback_to_api_feedback(
                 trace.feedback, trace_uuid=trace.uuid
             ),
-            traceTestCase=trace_test_case,
+            llmTestCase=trace_test_case,
             metricCollection=(
                 trace.metric_collection if trace.llm_test_case else None
             ),
@@ -624,7 +670,6 @@ class TraceManager:
             name=span.name,
             status=span.status.value,
             type=span_type,
-            traceUuid=span.trace_uuid,
             parentUuid=span.parent_uuid,
             startTime=start_time,
             endTime=end_time,
@@ -632,7 +677,7 @@ class TraceManager:
             output=output_data,
             metadata=span.metadata,
             error=span.error,
-            spanTestCase=span_test_case,
+            llmTestCase=span_test_case,
             metricCollection=span.metric_collection,
             feedback=convert_feedback_to_api_feedback(
                 span.feedback, span_uuid=span.uuid
@@ -846,11 +891,23 @@ class Observer:
             )
         elif self.span_type == SpanType.LLM.value:
             model = self.observe_kwargs.get("model", None)
+            cost_per_input_token = self.observe_kwargs.get(
+                "cost_per_input_token", None
+            )
+            cost_per_output_token = self.observe_kwargs.get(
+                "cost_per_output_token", None
+            )
             if model is None and not trace_manager.openai_client:
                 raise ValueError(
                     "Either provide a model in observe or configure an openai_client in trace_manager. For more information on openai_client, see https://documentation.confident-ai.com/docs/llm-tracing/integrations/openai"
                 )
-            return LlmSpan(**span_kwargs, attributes=None, model=model)
+            return LlmSpan(
+                **span_kwargs,
+                attributes=None,
+                model=model,
+                cost_per_input_token=cost_per_input_token,
+                cost_per_output_token=cost_per_output_token,
+            )
         elif self.span_type == SpanType.RETRIEVER.value:
             embedder = self.observe_kwargs.get("embedder", None)
             if embedder is None:

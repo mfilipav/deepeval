@@ -58,10 +58,7 @@ module.exports = {
             {
               type: "category",
               label: "Agentic Metrics",
-              items: [
-                "metrics-task-completion",
-                "metrics-tool-correctness",
-              ],
+              items: ["metrics-task-completion", "metrics-tool-correctness"],
               collapsed: false,
             },
             {
@@ -78,10 +75,21 @@ module.exports = {
             },
             {
               type: "category",
-              label: "Others",
+              label: "Safety",
               items: [
                 "metrics-bias",
                 "metrics-toxicity",
+                "metrics-non-advice",
+                "metrics-misuse",
+                "metrics-pii-leakage",
+                "metrics-role-violation",
+              ],
+              collapsed: false,
+            },
+            {
+              type: "category",
+              label: "Others",
+              items: [
                 "metrics-summarization",
                 "metrics-prompt-alignment",
                 "metrics-hallucination",
@@ -116,7 +124,7 @@ module.exports = {
       ],
       collapsed: false,
     },
-    {      
+    {
       type: "category",
       label: "Synthetic Data Generation",
       className: "sidebar-item-icon-synthetic-data",

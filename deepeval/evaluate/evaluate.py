@@ -166,6 +166,7 @@ def assert_test(
                 for metrics_data in failed_metrics_data
             ]
         )
+        failed_metrics_str = failed_metrics_str + "\n\nself.verbose_logs:\n" + metric_data.verbose_logs + "\nCost: " + str(metric_data.evaluation_cost)
         raise AssertionError(f"Metrics: {failed_metrics_str} failed.")
 
 

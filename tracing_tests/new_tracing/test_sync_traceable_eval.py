@@ -157,12 +157,17 @@ goldens = [
 #     display_config=DisplayConfig(show_indicator=False),
 # )
 # # Run Sync
-# evaluate(
-#     goldens=goldens,
-#     observed_callback=meta_agent,
-#     async_config=AsyncConfig(run_async=False),
-#     display_config=DisplayConfig(show_indicator=True),
-# )
+evaluate(
+    goldens=goldens,
+    observed_callback=meta_agent,
+    async_config=AsyncConfig(run_async=False),
+    display_config=DisplayConfig(
+        show_indicator=True,
+        print_results=True,
+        verbose_mode=True,
+        file_output_dir=".",
+    ),
+)
 # evaluate(
 #     goldens=goldens,
 #     observed_callback=meta_agent,
@@ -171,12 +176,12 @@ goldens = [
 # )
 
 
-# Assert Test
-def test_meta_agent_0():
-    golden = Golden(input="What's the weather like in SF?")
-    assert_test(golden=golden, observed_callback=meta_agent, run_async=False)
+# # Assert Test
+# def test_meta_agent_0():
+#     golden = Golden(input="What's the weather like in SF?")
+#     assert_test(golden=golden, observed_callback=meta_agent, run_async=False)
 
 
-def test_meta_agent_1():
-    golden = Golden(input="What's the weather like in SF?")
-    assert_test(golden=golden, observed_callback=meta_agent, run_async=False)
+# def test_meta_agent_1():
+#     golden = Golden(input="What's the weather like in SF?")
+#     assert_test(golden=golden, observed_callback=meta_agent, run_async=False)

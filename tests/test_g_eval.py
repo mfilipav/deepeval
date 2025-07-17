@@ -1,8 +1,10 @@
 import pytest
 from deepeval.metrics.g_eval.schema import Steps
+from deepeval.metrics.g_eval import Rubric
 from deepeval.test_case import LLMTestCase, LLMTestCaseParams
 from deepeval.metrics import GEval
 from deepeval import assert_test
+from deepeval.models import GPTModel
 from langchain.schema import AIMessage
 from unittest import mock
 import os
@@ -15,25 +17,122 @@ def test_steps_schema():
     answer = '{\n"steps": [\n   "step1",\n  "step2"\n]\n}'
     res: Steps = judge.generate(answer, schema=Steps)
 
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-@pytest.mark.skip(reason="openai is expensive")
-def test_g_eval():
+@mock.patch.dict(
+    os.environ,
+    {
+        "OPENAI_API_KEY": OPENAI_API_KEY,
+        "DEEPEVAL_VERBOSE_MODE": "YES"
+    },
+)
+def test_g_eval_with_criteria():
+    """
+    see logs in assessment dir
+    """
     metric = GEval(
-        name="Validity",
-        criteria="The response is a valid response to the prompt",
-        threshold=0.6,
+        name="Correctness",
+        # NOTE: you can only provide either criteria or evaluation_steps, and not both
+        criteria="Determine whether the actual output is factually correct based on expected output.",
+        # evaluation_steps=[
+        #     "Read the Input prompt and the Actual Output.",
+        #     "Check whether the facts in 'actual output' contradicts any facts in 'expected output'",
+        #     "You should also heavily penalize omission of detail",
+        #     "Vague language, or contradicting OPINIONS, are OK"
+        # ],
+        # NOTE: you can only provide eval params that are mentioned in criteria or evaluation_steps!
         evaluation_params=[
             LLMTestCaseParams.INPUT,
             LLMTestCaseParams.ACTUAL_OUTPUT,
+            LLMTestCaseParams.EXPECTED_OUTPUT,
+            # LLMTestCaseParams.CONTEXT,
         ],
+        # rubric=[
+        #     Rubric(score_range=(0,2), expected_outcome="Factually incorrect."),
+        #     Rubric(score_range=(3,6), expected_outcome="Mostly correct."),
+        #     Rubric(score_range=(7,9), expected_outcome="Correct but missing minor details."),
+        #     Rubric(score_range=(10,10), expected_outcome="100% correct."),
+        # ],
+        model=GPTModel(
+            model_name="gpt-4.1",
+            temperature=0.0,
+        ),
+        threshold=0.6,
+        strict_mode=False,
+        async_mode=True,
+        verbose_mode=True,
     )
     test_case = LLMTestCase(
-        input="What is the capital of France?",
-        actual_output="Paris",
-        expected_output="Paris",
-        context=["Geography"],
+        input="Where and when was Einstein born?",
+        actual_output="Einstein was born in Germany on 20th March 1879.",
+        expected_output="Einstein was born in Germany on 14th March 1879.",
+        # context=["Albert Einstein (born 14 March 1879) was a German-born theoretical physicist, widely held to be one of the greatest and most influential scientists of all time"],
     )
-    assert_test(test_case, [metric])
+
+    # metric.measure(test_case=test_case)
+    # print(metric.score, metric.reason)
+
+    # another way to call evaluation on metric
+    # # evaluate(test_cases=[test_case], metrics=[metric])
+    # assert metric.score is not None
+
+    assert_test(
+        test_case=test_case,
+        metrics=[metric],
+        run_async=False
+    )
+
+
+@mock.patch.dict(
+    os.environ,
+    {
+        "OPENAI_API_KEY": OPENAI_API_KEY,
+        "DEEPEVAL_VERBOSE_MODE": "YES"
+    },
+)
+def test_g_eval_with_eval_steps():
+    """
+    eval steps are provided
+    """
+    metric = GEval(
+        name="Correctness",
+        # NOTE: you can only provide either criteria or evaluation_steps, and not both
+        criteria=None,
+        evaluation_steps=[
+            "Read the Input to understand the context and requirements.",
+            "Compare the Actual Output to the Expected Output for factual alignment.",
+            "Verify if the Actual Output contains any inaccuracies or deviations from the Expected Output.",
+            "Determine if the Actual Output is factually correct based on the Expected Output."
+        ],
+        # NOTE: you can only provide eval params that are mentioned in criteria or evaluation_steps!
+        evaluation_params=[
+            LLMTestCaseParams.INPUT,
+            LLMTestCaseParams.ACTUAL_OUTPUT,
+            LLMTestCaseParams.EXPECTED_OUTPUT,
+            # LLMTestCaseParams.CONTEXT,
+        ],
+        # rubric=[
+        #     Rubric(score_range=(0,2), expected_outcome="Factually incorrect."),
+        #     Rubric(score_range=(3,6), expected_outcome="Mostly correct."),
+        #     Rubric(score_range=(7,9), expected_outcome="Correct but missing minor details."),
+        #     Rubric(score_range=(10,10), expected_outcome="100% correct."),
+        # ],
+        threshold=0.6,
+        strict_mode=False,
+        async_mode=True,
+        verbose_mode=True,
+    )
+    test_case = LLMTestCase(
+        input="Where and when was Einstein born?",
+        actual_output="Einstein was born in Germany on 20th March 1879.",
+        expected_output="Einstein was born in Germany on 14th March 1879.",
+        # context=["Albert Einstein (born 14 March 1879) was a German-born theoretical physicist, widely held to be one of the greatest and most influential scientists of all time"],
+    )
+    assert_test(
+        test_case=test_case,
+        metrics=[metric],
+        run_async=False
+    )
 
 
 @pytest.mark.skip(reason="openai is expensive")

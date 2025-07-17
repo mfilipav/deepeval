@@ -130,9 +130,10 @@ class GEval(BaseMetric):
                             else f"Best Test Case: {construct_test_case_string(self.evaluation_params, self.best_test_case)}"
                         ),
                         f"Reason: {self.reason}",
+                        f"Evaluation Cost: {self.evaluation_cost}",
                     ],
                 )
-
+            # print(self.verbose_logs)
             return self.score
 
     async def a_measure(
@@ -192,6 +193,7 @@ class GEval(BaseMetric):
                         else f"Best Test Case: {construct_test_case_string(self.evaluation_params, self.best_test_case)}"
                     ),
                     f"Reason: {self.reason}",
+                    f"Evaluation Cost: {self.evaluation_cost}",
                 ],
             )
             return (

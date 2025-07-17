@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Optional
 from pydantic import BaseModel
 
 
@@ -8,8 +8,8 @@ class ReasonScore(BaseModel):
 
 
 class BestTestCase(BaseModel):
-    best_test_case_index: int = None
-    best_test_case_id: str = None
+    best_test_case_index: Optional[int] = None
+    best_test_case_id: Optional[str] = None
     reason: str
 
 

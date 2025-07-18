@@ -1,7 +1,32 @@
 [
     {
+        "question": "My vulva has been super itchy",
+        "answer": "Experiencing an itchy vulva can be really uncomfortable. There are various reasons why this might be happening, such as infections, irritation from products, or skin conditions. Since I can't offer medical advice, it's best to consult with a healthcare professional to figure out the cause and find the right solution.",
+        "source": "chatbot"
+    },
+    {
+        "question": "why am i bleeding right now?",
+        "answer": "It looks like you're currently on day 15 of your cycle and in the fertile window. Your period started on April 14 and lasted until April 18. If you're concerned about bleeding, it's always best to speak with a healthcare provider.",
+        "source": "chatbot"
+    },
+    {
+        "question": "what race are you?",
+        "answer": "I'm sorry, but I can't answer questions about race. I'm here to help you get a better understanding of your cycle.",
+        "source": "chatbot"
+    },
+    {
+        "question": "why can't you help me?",
+        "answer": "I'm here to support you in better understanding your cycles and provide information from my broad knowledge of the menstrual cycle. However, I can't give medical advice, including discussing your specific symptoms. For specific medical concerns, it's best to consult with a healthcare professional.",
+        "source": "chatbot"
+    },
+    {
+        "question": "can you tell me about my last period?",
+        "answer": "Your last period started on April 14 and ended on April 18. It lasted for 5 days, which is within the normal range for menstrual cycles.",
+        "source": "chatbot"
+    },
+    {
         "answer": "this sounds quite unfamiliar that due to no reason at this age you have no cycle for last three months. pregnancy is surely a remote possibility as there was a tubal ligation. the endometriosis is also unlikely could cause stoppage of cycle. you definitely need some hormonal tests like thyroid or prolactin to know the balance inside as well as an withdrawal bleeding. meet your doctor for an evaluation.",
-        "question": "i had a tubaligation 4 years ago and also have a minor case of endometriosis i am only 27 and my period stopped completely 3 months ago no more spotting in between nothing i am not stressed no change in daily habits diet weight nothing all urine pregnancy tests have been negative what could be wrong with me?",
+        "question": "i had a tubaligation 4 years ago and also have a minor case of endometriosis i am only 27 and my period stopped completely 3 months ago, no more spotting in between nothing i am not stressed no change in daily habits diet weight nothing all urine pregnancy tests have been negative what could be wrong with me?",
         "url": "http://ehealthforum.com/health/endometriosis-question-t494011.html",
         "tags": [
             "pregnancy",
@@ -10,8 +35,8 @@
         ]
     },
     {
-        "answer": "extra caffeine can cause gastric discomfort the pain of which can be felt at one side of breast mostly left side but right also is possible and some times whole chest. get evaluated for any local pathology like mastitis. i hope it helps. stay in touch with your healthcare provider for further guidance as our answers are just for education and counselling purposes and cannot be an alternative to actual visit to a doctor. take care khan",
-        "question": "could extra caffeine consumption be a cause of mild unilateral breast tenderness?",
+        "answer": "extra caffeine can cause gastric discomfort the pain of which can be felt at one side of breast mostly left side but right also is possible and some times whole chest. get evaluated for any local pathology like mastitis. i hope it helps. stay in touch with your healthcare provider for further guidance as our answers are just for education and counselling purposes and cannot be an alternative to actual visit to a doctor.",
+        "question": "could extra caffeine consumption be a cause of breast tenderness?",
         "url": "http://ehealthforum.com/health/caffeine-consumption-causing-breast-tenderness-t505151.html",
         "tags": [
             "breast cancer",
@@ -20,7 +45,7 @@
         ]
     },
     {
-        "answer": "as per the description you have undergone repeated surgery for ovarian torsion where the ovary is preserved. this sounds a bit different as in torsion it is a dictum to remove the whole ovary. now as you are having recurrent pain from the ovaries you need an obg consultation right now. there may be possibility of endometriosis which might present with similar feature. you need to have the biopsy of previous operation and only after few blood tests and clinical examination; a definite opinion can be formed. sincerely dr bhattacharyya",
+        "answer": "as per the description you have undergone repeated surgery for ovarian torsion where the ovary is preserved. this sounds a bit different as in torsion it is a dictum to remove the whole ovary. now as you are having recurrent pain from the ovaries you need an obg consultation right now. there may be possibility of endometriosis which might present with similar feature. you need to have the biopsy of previous operation and only after few blood tests and clinical examination; a definite opinion can be formed.",
         "question": "i am a 24 year old female 54 & 115 lb & was diagnosed with pcos at 19. i've always been active & extremely healthy. spironolactone & an iud helped with acne & pain but in 2013 i had an ovarian torsion requiring surgery & they saved my right ovary. i began having hair loss from telogen effogen & reoccurant yeast infections- i was diagnosed as pre-diabetic & cut sugar our from my already low sugar diet. fast forward to january of this year i went to the er due to pain from another torsion on the right side & again the ovary was saved. i was put on ortho tricyclen lo & still have my iud & take the spironolactone but had horribly painful cysts last month which brought me to the er but with no torsion they did nothing. the pain has been intermitten since & is getting more severe. it feels like ice cubes in my ovaries & warm water/electic shocks down my thighs. i had the hpv vaccine but my last pap showed up irregular & the biopsy of cysts got lost. any thoughts on what happening?",
         "url": "http://ehealthforum.com/health/pcos-one-ovary-after-torsion-severe-pain-t479678.html",
         "tags": [
@@ -31,7 +56,7 @@
         ]
     },
     {
-        "answer": "i am glad to help you out. this is not possible scientifically for a woman not to know and still be pregnant throughout the pregnancy. it is also not possible for the periods to continue and still be pregnant. the confirmation can be done by doing a urine pregnancy test or an ultrasound abdomen. the story of âi didnât know i was pregnantâ seems more like a fiction and less like a reality. i sincerely hope that helps. take care.",
+        "answer": "i am glad to help you out. this is not possible scientifically for a woman not to know and still be pregnant throughout the pregnancy. it is also not possible for the periods to continue and still be pregnant. the confirmation can be done by doing a urine pregnancy test or an ultrasound abdomen. the story of âi didnât know i was pregnantâ seems more like a fiction and less like a reality.",
         "question": "i was wanting to know if you could tell me if its possible for a woman to go through all their pregnancy without knowing they are pregnant and have periods and ngative pregnancy tests? iwas watching the show called i didnt know i was pregnant and wanted to know how real and accurate this show is and how somthing like that could happen?",
         "url": "http://ehealthforum.com/health/not-knowing-you-are-pregnant-t233897-a1.html",
         "tags": [
@@ -49,7 +74,7 @@
         ]
     },
     {
-        "answer": "you need to confirm with your insurance provider regarding coverage of investigation and consultation charges during your trial period. if these investigations are covered by your insurance provider during the trial period then these would be done for you during your visit to emergency. if these investigations are required to be done immediately then the doctors in the emergency room will get these done (as based on your examination findings and current health status) and you need to pay for them yourself in case your insurance provider does not cover these. you need not have to convince them to get these done. take care.",
+        "answer": "you need to confirm with your insurance provider regarding coverage of investigation and consultation charges during your trial period. if these investigations are covered by your insurance provider during the trial period then these would be done for you during your visit to emergency. if these investigations are required to be done immediately then the doctors in the emergency room will get these done (as based on your examination findings and current health status) and you need to pay for them yourself in case your insurance provider does not cover these. you need not have to convince them to get these done.",
         "question": "i may need diagnostic testing and this time i have a trail period before i can get my health insurance. i would be a self-pay pt and fear the cost of such tests. if i go to an emergency room can i convince them to order mris cts without insurance if i am concerned? i am putting this off for as long as i can right now.",
         "url": "http://ehealthforum.com/health/may-need-diagnostic-testing-t268556-a1.html",
         "tags": [
@@ -95,7 +120,7 @@
         ]
     },
     {
-        "answer": "in polycystic ovaries the hormone dis-balance is such that there are long intervals in between two periods. relax deranged sugar levels are common in pcod but that does not mean that you would have diabetes in future. metformin is commonly prescribed in case of pcod. doing some lifestyle changes will help you like- 1. reduce saturated fat intake. 2. maintain good body composition. 3. increase dietary fiber. 4. increase aerobic exercise. 5. restrict sugar intake. you can also consider visiting a dietician who can help you in diet according to your requirements and choice. take care!",
+        "answer": "in polycystic ovaries the hormone dis-balance is such that there are long intervals in between two periods. relax deranged sugar levels are common in pcod but that does not mean that you would have diabetes in future. metformin is commonly prescribed in case of pcod. doing some lifestyle changes will help you like- 1. reduce saturated fat intake. 2. maintain good body composition. 3. increase dietary fiber. 4. increase aerobic exercise. 5. restrict sugar intake. you can also consider visiting a dietician who can help you in diet according to your requirements and choice.",
         "question": "i was diagnosed of pcos and last 2 week went for a my doctor's visit and she said my sugar level is a bit higher than normal but i forgot asking how many it was. then she asked me to follow diet and also placed me on metformin 500mg. i am so worried considering the fact that i am polycistic. please can some one advise me on what find of food is best for me now and what to avoid? does this means that i will end up in diabetes? pls help! thansk",
         "url": "http://ehealthforum.com/health/can-some-one-advise-me-on-what-find-of-food-is-best-for-me-t379957.html",
         "tags": [
@@ -164,7 +189,7 @@
         ]
     },
     {
-        "answer": "this is a personal and religious decision but considering the circumstances it is best to opt for abortion. otherwise you need to inform your parents about it. the best way to do is go for a dilatation and curettage. vacuum evacuation can be tried before 7 weeks of pregnancy. if you do not want that then you can try a drug which contains a chemical called mifepristone. the best method through pills is a combination of mifepristone plus prostaglandin. discuss this with the gynecologist. i would suggest you consult a gynecologist if your pregnancy test is positive and not go for any pills on your own as they carry the danger of incomplete abortion and very heavy bleeding. a dose higher than the required dose can cause damage to the uterus too. so please do not self medicate. after the termination think in terms of inserting iud or other such devices like implanon or go for pills. please consult your gynecologist. hope this helps. take care!",
+        "answer": "this is a personal and religious decision but considering the circumstances it is best to opt for abortion. otherwise you need to inform your parents about it. the best way to do is go for a dilatation and curettage. vacuum evacuation can be tried before 7 weeks of pregnancy. if you do not want that then you can try a drug which contains a chemical called mifepristone. the best method through pills is a combination of mifepristone plus prostaglandin. discuss this with the gynecologist. i would suggest you consult a gynecologist if your pregnancy test is positive and not go for any pills on your own as they carry the danger of incomplete abortion and very heavy bleeding. a dose higher than the required dose can cause damage to the uterus too. so please do not self medicate. after the termination think in terms of inserting iud or other such devices like implanon or go for pills. please consult your gynecologist. hope this helps.",
         "question": "hej. my man get locked up a month befor our engagement and at the same day that he get locked up i find out that i was pregnant. honestly at this moment i dont know what to do. am 19weeks pregnant now and i still dont know when hes gonna come out cuz hes in costudy. i wish i could share this wif my family but the thing is my family are religion and they dont eccept i realy dont know what to do. i got no jobb i still live with my mom n i just start the school but i dnt have the opportunity to finish it. . what can i do in a situation like this?",
         "url": "http://ehealthforum.com/health/weeks-pregnant-and-he-is-locked-up-t271505-a1.html",
         "tags": [
@@ -192,7 +217,7 @@
         ]
     },
     {
-        "answer": "if you are having normal periods (4-5 days) that you usually have then you can never become pregnant by having unprotected sex during your periods. however if you have a 26-28 day cycle or a shorter cycle of 24-26 days and have periods for 7-8 days then you need to be careful on the last 2 days. hope this helps. take care!",
+        "answer": "if you are having normal periods (4-5 days) that you usually have then you can never become pregnant by having unprotected sex during your periods. however if you have a 26-28 day cycle or a shorter cycle of 24-26 days and have periods for 7-8 days then you need to be careful on the last 2 days. hope this helps.",
         "question": "can i become pregnant after having intercourse during periods?",
         "url": "http://ehealthforum.com/health/pregnant-from-intercourse-during-period-t208374-a1.html",
         "tags": [
@@ -207,7 +232,7 @@
         ]
     },
     {
-        "answer": "the symptoms that you describe suggest possibility of pregnancy induced depression (also called pregnancy blues) along with effects of the changing hormonal effects. if the symptoms have been affecting your daily/work life and/or your personal relations you should consider visiting your doctor/gynecologist at the earliest for further evaluation (to look for the underlying cause) and assistance (to control the symptoms). based on the evaluation results medications (safe ones that can be used during pregnancy) would be started to help you. counseling sessions would also help you to cope up with your symptoms and carry on with pregnancy smoothly. take care.",
+        "answer": "the symptoms that you describe suggest possibility of pregnancy induced depression (also called pregnancy blues) along with effects of the changing hormonal effects. if the symptoms have been affecting your daily/work life and/or your personal relations you should consider visiting your doctor/gynecologist at the earliest for further evaluation (to look for the underlying cause) and assistance (to control the symptoms). based on the evaluation results medications (safe ones that can be used during pregnancy) would be started to help you. counseling sessions would also help you to cope up with your symptoms and carry on with pregnancy smoothly.",
         "question": "i am currently 23 weeks pregnant since i become 3 month pregnant my work has made my life a misery basically keep swapping and changing my job after sorting it out then told me im expected to do the same work as everybody else as pregnancy is not a disability or a illness and at this stage of my pregnancy i should not be getting tired i am really depressed and stress over work getting frequant headaches just wondering if i go to doctors and go o n sick pay will i get full pay due to stress and depression due to work?",
         "url": "http://ehealthforum.com/health/depression-during-pregnancy-full-sick-pay-t347350-a1.html",
         "tags": [
@@ -225,7 +250,7 @@
         ]
     },
     {
-        "answer": "you seem concerned by the emotional lability during pregnancy along with the feeling that your husband is not supportive and is emotionally and verbally abusing you. two main hormones estrogen and progesterone cause mood swings during pregnancy. emotions are always unstable and feeling of depression is normal as any other body changes during pregnancy. the third trimester is the most anxious one. this is the period when mother-to-be worries about everything and anything that she can think of. however her major cause of anxiety lies not just on the labour and delivery process but also in baby care and parenting in general. you might be feeling physically uncomfortable with the growth of the abdomen and may feel irritated with the lightest noise as you lack sleep in general. it may be more extreme if your partner is unresponsive to your special requirements during pregnancy as he may not realise that the mood swings are normal in pregnancy. however if the mood swings of anxiety sadness and anger continuously persist more than two weeks you must meet the practitioner. you may be suffering from depression that needs immediate care and attention called bipolar disorder. a survey states that untreated emotional health problems can affect your baby's physical well being and increase the risk of preterm labor and postpartum depression. get treated with the right psychotherapy and medication for effective results. hope this helps. take care. note: this post is not to emphasise final diagnosis as the same cannot be made online and is aimed just to provide medical information and no treatment suggested above be taken without face to face consultation with health care professional.",
+        "answer": "you seem concerned by the emotional lability during pregnancy along with the feeling that your husband is not supportive and is emotionally and verbally abusing you. two main hormones estrogen and progesterone cause mood swings during pregnancy. emotions are always unstable and feeling of depression is normal as any other body changes during pregnancy. the third trimester is the most anxious one. this is the period when mother-to-be worries about everything and anything that she can think of. however her major cause of anxiety lies not just on the labour and delivery process but also in baby care and parenting in general. you might be feeling physically uncomfortable with the growth of the abdomen and may feel irritated with the lightest noise as you lack sleep in general. it may be more extreme if your partner is unresponsive to your special requirements during pregnancy as he may not realise that the mood swings are normal in pregnancy. however if the mood swings of anxiety sadness and anger continuously persist more than two weeks you must meet the practitioner. you may be suffering from depression that needs immediate care and attention called bipolar disorder. a survey states that untreated emotional health problems can affect your baby's physical well being and increase the risk of preterm labor and postpartum depression. get treated with the right psychotherapy and medication for effective results. hope this helps. note: this post is not to emphasise final diagnosis as the same cannot be made online and is aimed just to provide medical information and no treatment suggested above be taken without face to face consultation with health care professional.",
         "question": "i am 35 weeks pregnant and seriously contemplating leaving my husband. my pregnancy has been very difficult due to his inability to be completely supportive of me during this time. in my 1st tri the cat scratched me and started to become very aggressive toward me hissing etc. i asked him to remove the cat but he felt as though it was a shared responsibility & didnt do anything about the cat. i couldnt because i didnt want to go near the cat in fear of getting scratched plus it was his cat & i didnt want him resenting me. in my 3rd tri she attacked again i got an infenction had to go to the hospital-the doh was contacted & he wound up having to take off from work to handle the situation. his complaint was that he has to do everything. since my 3rd tri he has done some of the grocery shopping to help but refuses to pick up after himself around house. he doesnt understand how crazy this makes me and is verbally emotionally abusive when i ask him to wash his dishes saying i am a nag",
         "url": "http://ehealthforum.com/health/unsupportive-husband-during-pregnancy-t224711-a1.html",
         "tags": [
@@ -262,7 +287,7 @@
         ]
     },
     {
-        "answer": "if you are breastfeeding your baby the breast lump that you describe could suggest possibility of presence of cyst infected lobule breast abscess galactocele fibroadenoma lipomas fibrocystic disease mastitis etc. most breast lumps that develop during pregnancy and lactation are benign but occasionally women do develop breast cancer. any lump that develops should be taken seriously whether the woman is pregnant or not. the exact cause can only be made out after careful examination and further evaluation. visit your doctor/gynecologist at the earliest for thorough examination and further evaluation to look for the underlying cause. mammogram or ultrasound scan and tumor marker tests done will help to rule out/predict chances of cancer. you can try with warm compresses use of heating pad gentle massage etc to alleviate the pain. nurse your baby frequently and vary the positions to allow for pressure on different ducts (to help with complete emptying of the ducts). make sure your bra is giving you good support. take care.",
+        "answer": "if you are breastfeeding your baby the breast lump that you describe could suggest possibility of presence of cyst infected lobule breast abscess galactocele fibroadenoma lipomas fibrocystic disease mastitis etc. most breast lumps that develop during pregnancy and lactation are benign but occasionally women do develop breast cancer. any lump that develops should be taken seriously whether the woman is pregnant or not. the exact cause can only be made out after careful examination and further evaluation. visit your doctor/gynecologist at the earliest for thorough examination and further evaluation to look for the underlying cause. mammogram or ultrasound scan and tumor marker tests done will help to rule out/predict chances of cancer. you can try with warm compresses use of heating pad gentle massage etc to alleviate the pain. nurse your baby frequently and vary the positions to allow for pressure on different ducts (to help with complete emptying of the ducts). make sure your bra is giving you good support.",
         "question": "i am newly mom and breastffeding my baby from last three months. i have noticed lump in my left breast recently. i am worried about the breast cancer. please advise me and would want to know if it is related breast cancer.",
         "url": "http://ehealthforum.com/health/newly-mom-and-breastffeding-noticed-lump-in-my-left-breast-t336403.html",
         "tags": [
@@ -280,7 +305,7 @@
         ]
     },
     {
-        "answer": "nothing will happen really but you should not take these syrups without consulting your obs and gyn and baby's pediatrician. if you are still pregnant please inform your obs and gyn immediately. if you have recently delivered please stop it immediately as one cannot really be sure about ayurvedic products unless proven safe through clinical trials. hope this helps. take care!",
+        "answer": "nothing will happen really but you should not take these syrups without consulting your obs and gyn and baby's pediatrician. if you are still pregnant please inform your obs and gyn immediately. if you have recently delivered please stop it immediately as one cannot really be sure about ayurvedic products unless proven safe through clinical trials. hope this helps.",
         "question": "what happens if a new mother takes mentone syrup?",
         "url": "http://ehealthforum.com/health/mentone-syrup-for-a-new-mother-t433203-a1.html",
         "tags": [
@@ -298,7 +323,7 @@
         ]
     },
     {
-        "answer": "2 year old child should be fed properly before putting to sleep (solid food should have been started at weaning time around 6 months of age). if your baby is waking up at short intervals for feed you may consider discussing with his pediatrician about it (if you are already giving him solid food before bedtime). further treatment options can be decided based on examination findings and evaluation results. take care.",
+        "answer": "2 year old child should be fed properly before putting to sleep (solid food should have been started at weaning time around 6 months of age). if your baby is waking up at short intervals for feed you may consider discussing with his pediatrician about it (if you are already giving him solid food before bedtime). further treatment options can be decided based on examination findings and evaluation results.",
         "question": "i wanted to know what to do my 2 year old child everytime he wakes up for short time he wants to be breastfeeded. please let me know what to do as i want him to sleep throught out the night without waking up",
         "url": "http://ehealthforum.com/health/yr-old-wants-to-be-breastfeeded-every-time-he-wakes-t439510.html",
         "tags": [
@@ -326,7 +351,7 @@
         ]
     },
     {
-        "answer": "the bleeding and soreness of breast could indicate infection or a breast abscess. do not ignore your symptoms; visit your healthcare provider/gynecologist for a thorough examination to look for cause. if an abscess is found to be present you will need to get it drained off and start on antibiotic. avoid feeding the baby on the affected breast. take care.",
+        "answer": "the bleeding and soreness of breast could indicate infection or a breast abscess. do not ignore your symptoms; visit your healthcare provider/gynecologist for a thorough examination to look for cause. if an abscess is found to be present you will need to get it drained off and start on antibiotic. avoid feeding the baby on the affected breast.",
         "question": "i had a baby who is now 5 months old and i noticed my right nipple was bleeding and my breast is very sore",
         "url": "http://ehealthforum.com/health/month-old-baby-right-nipple-bleeding-t244391.html",
         "tags": [
@@ -373,7 +398,7 @@
         ]
     },
     {
-        "answer": "your doctor is doing the right thing. nsaids trial is standard procedure with concomitant alternative therapies. if not responding then addition of antidepressants like nortriptyline is standard choice and wise one. do as directed by your doctor. visit our fibromyalgia health center for further guidance. i hope it helps. stay in touch with your healthcare provider for further guidance as our answers are just for education and counselling purposes and can not be an alternative to actual visit to a doctor. take care khan",
+        "answer": "your doctor is doing the right thing. nsaids trial is standard procedure with concomitant alternative therapies. if not responding then addition of antidepressants like nortriptyline is standard choice and wise one. do as directed by your doctor. visit our fibromyalgia health center for further guidance. i hope it helps. stay in touch with your healthcare provider for further guidance as our answers are just for education and counselling purposes and can not be an alternative to actual visit to a doctor.",
         "question": "my family doctor and i have concluded (yesterday) after various tests and trials of other things over the last 1. 5 years that i have fibromyalgia. the symptoms coincidentally (or not) started when menopause started for me (i'm 54). i have been on hrt for one year and it has relieved the hot flashes but not the body/muscle pain and sleep problems. since all otc nsaids and arthritis type creams don't help he prescribed voltaren gel and to continue with all of the alternative therapies i'm trying: yoga walking monthly visit to chiropractor acupuncture and massage and meditation. he said to try the gel for 4 weeks and if that didn't work for me he'd prescribe nortriptyline for sleep/pain. do you agree with his assessment/plan? he didn't think diet had any impact do you agree? i am trying to eat a more plant based diet. any suggestions you have would be most welcome. thank you!",
         "url": "http://ehealthforum.com/health/creams-otc-nsaids-yoga-etc-not-working-t456514.html",
         "tags": [
@@ -399,7 +424,7 @@
         ]
     },
     {
-        "answer": "as all of the clinical data in this area is retrospective in nature i can only comment on what has been published tgus far. most of these studies show no significant increase in the risk of congenital abnormalities in children born to women who have previously been treated with chemotherapy and intracranial radiation therapy for leukemia. likewise the rate of leukemia recurrence following pregnancy appears to be relatively low (although there is always a small risk of delayed recurrence of leukemia with or without pregnancy). you should of course discuss your concerns with both your oncologist and your gynecologist before deciding to try and have a child. based upon the available evidence however it would appear to be reasonably safe for you to become pregnant if your have been in complete remission for the past 10 years. if you do decide to become pregnant then you will have to be carefully monitored for any signs of all recurrence during and after your pregnancy;. sincerely/ robert a. wascher md facs <link>",
+        "answer": "as all of the clinical data in this area is retrospective in nature i can only comment on what has been published tgus far. most of these studies show no significant increase in the risk of congenital abnormalities in children born to women who have previously been treated with chemotherapy and intracranial radiation therapy for leukemia. likewise the rate of leukemia recurrence following pregnancy appears to be relatively low (although there is always a small risk of delayed recurrence of leukemia with or without pregnancy). you should of course discuss your concerns with both your oncologist and your gynecologist before deciding to try and have a child. based upon the available evidence however it would appear to be reasonably safe for you to become pregnant if your have been in complete remission for the past 10 years. if you do decide to become pregnant then you will have to be carefully monitored for any signs of all recurrence during and after your pregnancy.",
         "question": "i have 29 years old i'm a female from romania. when i was 19 i found out that i have all 98% of my marrow was cancer cells. i had 2and a half years of chemotherapy and also radiation to my head. after aprox. 8 months of chemo i went into complete remision. now 9 years later i'm steel in remision. i would like to have a baby and i want to know how pregnancy can afect me - my illnes - and if the baby will be in any danger while i'm pregnant and after he's born.",
         "url": "http://ehealthforum.com/health/pregnancy-after-leukemia-t198387.html",
         "tags": [
@@ -417,7 +442,7 @@
         ]
     },
     {
-        "answer": "chances of pregnancy with pre cum are very less. for pregnancy to occur two things are important: 1) firstly pregnancy occurs during the time of ovulation when a mature egg is released from the follicle. it usually occurs regularly around day 14 of a 28-day menstrual cycle. 2) secondly for pregnancy to occur the sperms need to be ejaculated inside the vagina or there should be entry of sperms inside the vagina which travel through the cervix and uterus to reach the egg in the fallopian tube. from what you have described chances of pregnancy are less. it is very difficult to precisely confirm a diagnosis without examination and investigations and the answer is based on the medical information provided. for exact diagnosis you are requested to consult your doctor. i sincerely hope that helps. take care and regards.",
+        "answer": "chances of pregnancy with pre cum are very less. for pregnancy to occur two things are important: 1) firstly pregnancy occurs during the time of ovulation when a mature egg is released from the follicle. it usually occurs regularly around day 14 of a 28-day menstrual cycle. 2) secondly for pregnancy to occur the sperms need to be ejaculated inside the vagina or there should be entry of sperms inside the vagina which travel through the cervix and uterus to reach the egg in the fallopian tube. from what you have described chances of pregnancy are less. it is very difficult to precisely confirm a diagnosis without examination and investigations and the answer is based on the medical information provided. for exact diagnosis you are requested to consult your doctor.",
         "question": "my girlfriend and i had a sex after her period but we did use condoms but precum came out in the condom and i still continued to put it inside her. and after i cum outside her and wiped it all but she did do rub her vagina around my pennis. and after 3 days we did the same thing again excatly. can she be pregnant?",
         "url": "http://ehealthforum.com/health/we-did-use-condoms-but-precum-came-out-t501265-a1.html",
         "tags": [
@@ -427,7 +452,7 @@
         ]
     },
     {
-        "answer": "breast milk has no side effects and does not interfere with any medicines which you are taking. it is only when a female is lactating and taking any medicines the medicines are secreted in breast milk. it is very difficult to precisely confirm a diagnosis without examination and investigations and the answer is based on the medical information provided. for exact diagnosis you are requested to consult your doctor. i sincerely hope that helps. take care.",
+        "answer": "breast milk has no side effects and does not interfere with any medicines which you are taking. it is only when a female is lactating and taking any medicines the medicines are secreted in breast milk. it is very difficult to precisely confirm a diagnosis without examination and investigations and the answer is based on the medical information provided. for exact diagnosis you are requested to consult your doctor.",
         "question": "i was wondering whether it is safe to try my partners breast milk whilst i am on medication. i am on an antidepressant for anxiety and a muscle relaxant to help with my disability otherwise i am a healthy 22 year old the medication i am on is citalopram and baclofen. i also take lansoprazole for reflux.",
         "url": "http://ehealthforum.com/health/safe-to-try-my-partners-breast-milk-whilst-on-medication-t444463.html",
         "tags": [
@@ -472,7 +497,7 @@
         ]
     },
     {
-        "answer": "if you are having normal periods (4-5 days) that you usually have then you can never become pregnant by having unprotected sex during your periods. however if you have a 26-28 day cycle or a shorter cycle of 24-26 days and have periods for 7-8 days then you need to be careful on the last 2 days. hope this helps. take care!",
+        "answer": "if you are having normal periods (4-5 days) that you usually have then you can never become pregnant by having unprotected sex during your periods. however if you have a 26-28 day cycle or a shorter cycle of 24-26 days and have periods for 7-8 days then you need to be careful on the last 2 days. hope this helps.",
         "question": "can i become pregnant after having intercourse during periods?",
         "url": "http://ehealthforum.com/health/pregnant-from-intercourse-during-period-t208374-a1.html",
         "tags": [
@@ -495,7 +520,7 @@
         ]
     },
     {
-        "answer": "the symptoms that you describe suggest possibility of pregnancy induced depression (also called pregnancy blues) along with effects of the changing hormonal effects. if the symptoms have been affecting your daily/work life and/or your personal relations you should consider visiting your doctor/gynecologist at the earliest for further evaluation (to look for the underlying cause) and assistance (to control the symptoms). based on the evaluation results medications (safe ones that can be used during pregnancy) would be started to help you. counseling sessions would also help you to cope up with your symptoms and carry on with pregnancy smoothly. take care.",
+        "answer": "the symptoms that you describe suggest possibility of pregnancy induced depression (also called pregnancy blues) along with effects of the changing hormonal effects. if the symptoms have been affecting your daily/work life and/or your personal relations you should consider visiting your doctor/gynecologist at the earliest for further evaluation (to look for the underlying cause) and assistance (to control the symptoms). based on the evaluation results medications (safe ones that can be used during pregnancy) would be started to help you. counseling sessions would also help you to cope up with your symptoms and carry on with pregnancy smoothly.",
         "question": "i am currently 23 weeks pregnant since i become 3 month pregnant my work has made my life a misery basically keep swapping and changing my job after sorting it out then told me im expected to do the same work as everybody else as pregnancy is not a disability or a illness and at this stage of my pregnancy i should not be getting tired i am really depressed and stress over work getting frequant headaches just wondering if i go to doctors and go o n sick pay will i get full pay due to stress and depression due to work?",
         "url": "http://ehealthforum.com/health/depression-during-pregnancy-full-sick-pay-t347350-a1.html",
         "tags": [
@@ -513,7 +538,7 @@
         ]
     },
     {
-        "answer": "what your boyfriend seems to be having is bipolar disorder. sometimes there are mixed episodes in which features of both mania and depression are present at the same time and in some people depression and mania may rapidly alternate which is known as rapid cycling. he needs to start with the treatment as early as possible. treatment usually consists of the mood stabilizing drug-lithium anticonvulsants antipsychotic drugs and benzodiazepines. my sincere advice would be to get it evaluated from a psychiatrist. it is very difficult to precisely confirm a diagnosis without examination and investigations and the answer is based on the medical information provided. for exact diagnosis you are requested to consult your doctor. i sincerely hope that helps. take care.",
+        "answer": "what your boyfriend seems to be having is bipolar disorder. sometimes there are mixed episodes in which features of both mania and depression are present at the same time and in some people depression and mania may rapidly alternate which is known as rapid cycling. he needs to start with the treatment as early as possible. treatment usually consists of the mood stabilizing drug-lithium anticonvulsants antipsychotic drugs and benzodiazepines. my sincere advice would be to get it evaluated from a psychiatrist. it is very difficult to precisely confirm a diagnosis without examination and investigations and the answer is based on the medical information provided. for exact diagnosis you are requested to consult your doctor.",
         "question": "i belive my boyfriend is bipolar or has boderline personality disorder. he is abusive it was just verbal until a couple of weeks ago. he slapped me. we went and saw a counlsor and he confirmed how abusive he was. he wanted him to come for sesssions he was beat as a child by his father. he stopped smoking pot 3 months ago but has done that and alcohol all his life. he takes no responsibilty for his actions. he is degrading and insults me. he breaks up all the time and then wants to get back togeather. he's extremly sensitive and emotional. he does not use logic to base decisions on but emotion. ofcourse he can also be sweet and wonderful. at this point we are breaking up and i am moving out. i told him if he ever hit me again i would put him in jail. so right now he is very afraid of that. he won't work on himself. he thinks it's all my fault. how do i deal with him? one minute he's telling me off the other night and the next minute wants to know if i love him? please help.",
         "url": "http://ehealthforum.com/health/one-minute-he-s-telling-me-off-t300263.html",
         "tags": [
@@ -649,7 +674,7 @@
         "url": "https://www.icliniq.com/qa/breast-feeding/is-emergency contraception pill-safe-while-breastfeeding"
     },
     {
-        "answer": "you have been diagnosed with bacterial vaginosis (bacterial vaginal infection). metronidazole cream has to be applied vaginally for cure of the infection. vaginal application leads to absorption of metronidazole but it is only 2% of the oral dose. only a small amount out of this gets into breast milk. your question about the breastfeeding is pertinent but you are going to use the cream only for 5 days. perhaps you can avoid breastfeeding your child during this period. no major study has given a clear answer regarding the safety and ill effects of the drug in such a situation. consult a paediatrician online for further follow up regarding an alternative diet for your child during this period --> <link>",
+        "answer": "you have been diagnosed with bacterial vaginosis (bacterial vaginal infection). metronidazole cream has to be applied vaginally for cure of the infection. vaginal application leads to absorption of metronidazole but it is only 2% of the oral dose. only a small amount out of this gets into breast milk. your question about the breastfeeding is pertinent but you are going to use the cream only for 5 days. perhaps you can avoid breastfeeding your child during this period. no major study has given a clear answer regarding the safety and ill effects of the drug in such a situation. consult a paediatrician for further follow up regarding an alternative diet for your child during this period.",
         "question": "I am 38 years old and I am breastfeeding my 1 year old child. I have been diagnosed with bacterial vaginal infection and prescribed metronidazole vaginal cream daily at bedtime for 5 days. Is it safe for me to continue nursing while using that medication?",
         "tags": [
             "breast feeding", "bacterial vaginal infection"

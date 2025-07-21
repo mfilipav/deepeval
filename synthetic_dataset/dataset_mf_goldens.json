@@ -1,0 +1,128 @@
+[
+    {
+        "input": "My vulva has been super itchy",
+        "actual_output": null,
+        "expected_output": "Experiencing an itchy vulva can be really uncomfortable. There are various reasons why this might be happening, such as infections, irritation from products, or skin conditions. It seems that you've been having a lot of sex lately (30 times in 20 days), you might have an STI. Since I can't offer medical advice, it's best to consult with a healthcare professional to figure out the cause and find the right solution.",
+        "retrieval_context": null,
+        "context": [
+            "Age: 22, BMI: 21.9485766758494, EndMenses: 2025-04-18, Height: 66, IntercourseInFertileWindow: 30, LengthofCycle: 27, LengthofMenses: 5, MeanBleedingIntensity: 10.17, MeanCycleLength: 27.17, MeanMensesLength: 5.33, NumberofDaysofIntercourse: 20, StartMenses: 2025-04-14, Today: 2025-04-29, TotalMensesScore: 11, UnusualBleeding: 1, Weight: 136"
+        ],
+        "source_file": null
+    },
+    {
+        "input": "Is emergency contraception pill safe while breastfeeding? If not, then what are the alternative measures?",
+        "actual_output": null,
+        "expected_output": "yes if you want to use it as an emergency contraceptive then it is safe during breastfeeding. you can take but the best contraceptive during breastfeeding is copper-t insertion (intrauterine contraceptive device). for further information consult an obstetrician and gynaecologist",
+        "retrieval_context": null,
+        "context": null,
+        "source_file": null
+    },
+    {
+        "input": "i am 6 weeks pregnant and i have severe headache and backache. i also feel nauseated all the time. what should i do?",
+        "actual_output": null,
+        "expected_output": "the symptoms you are experiencing are due to the hormonal changes in your body. it is very common to have such symptoms during pregnancy. the symptoms will subside as the pregnancy progresses. you can take paracetamol for headache and backache. you can also take vitamin b6 for nausea and vomiting. if the symptoms persist or worsen then you should consult your doctor for further evaluation and management.",
+        "retrieval_context": null,
+        "context": null,
+        "source_file": null
+    },
+    {
+        "input": "What is happening within our body that causes the most stubborn acne when we were on our period? What is the difference between the acne we get while on our period versus off? What are the best ways (besides specific products) to treat acne specifically during that time?",
+        "actual_output": null,
+        "expected_output": "during menses body releases lots of hormones. these androgens cause stimulation of skin pilosebaceous ducts and lead to acne during the menstruation. these types of acne usually appear in chin area may be because of more concentrated pilosebaceous unit localized to this place. You are also still a teenager, so this is normal to have acne. You could try to maintain hormonal imbalance with the help of antiandrogen to reduce acne during your period, but please consult a dermatologist for further information",
+        "retrieval_context": null,
+        "context": [
+            "Age: 16, BMI: 19.9485, CycleWithPeakorNot: 0, EndMenses: NA, Height: 66, IntercourseInFertileWindow: 1, LengthofCycle: 27, LengthofMenses: NA, MeanCycleLength: 27.17, MeanMensesLength: 5.33, NumberofDaysofIntercourse: 6, StartMenses: 2025-04-14, Today: 2025-04-14, UnusualBleeding: 1, Weight: 120"
+        ],
+        "source_file": null
+    },
+    {
+        "input": "I'm 51 and have been through the menopause. I haven't had a period in 3 years. Last week, I bled quite heavy for a few days. I just did the blood test. My question is, is the blood testing enough to rule out anything serious? Or should I see a doctor for an internal examination?",
+        "actual_output": null,
+        "expected_output": "postmenopausal bleeding is the vaginal bleeding which occurs 1 year after attaining menopause. it should be evaluated particularly in whom with a family history of carcinoma. pmp bleeding patients are at high risk of endometrial cancer. the causes of pmp bleeding include vaginal atrophy (the most common) hormonal replacement therapy for menopause like tamoxifen endometritis or endometrial infection endometrial hyperplasia endometrial carcinoma cervical polyps cervical carcinoma and any other gynecological carcinoma. better to go for tvus (transvaginal ultrasound scan) pap smear and then endometrial biopsy based on the wall thickness. for further information consult an internal medicine physician",
+        "retrieval_context": null,
+        "context": null,
+        "source_file": null
+    },
+    {
+        "input": "why am i bleeding right now?",
+        "actual_output": null,
+        "expected_output": "It looks like you're currently on day 15 of your cycle and in the fertile window. Your period started on April 14 and lasted until April 18. If you're concerned about bleeding, it's always best to speak with a healthcare provider.",
+        "retrieval_context": null,
+        "context": [
+            "Abortions: 0, Age: 30, BMI: 21.9485766758494, CycleWithPeakorNot: 0, EndMenses: 2025-04-18, EstimatedDayofOvulation: None, FirstDayofHigh: 15, Height: 66, IntercourseInFertileWindow: 1, LengthofCycle: 27, LengthofLutealPhase: None, LengthofMenses: 5, Livingkids: 3, Maristatus: 0, MeanBleedingIntensity: 10.17, MeanCycleLength: 27.17, MeanMensesLength: 5.33, Medvitexplain: provigil (narcolepsy) and detrol (urine inconsistency), Miscarriages: 0, NumberofDaysofIntercourse: 6, Numberpreg: 3, Schoolyears: 8, StartMenses: 2025-04-14, Today: 2025-04-29, TotalDaysofFertility: 8, TotalFertilityFormula: 22, TotalHighPostPeak: 0, TotalMensesScore: 11, TotalNumberofHighDays: 8, TotalNumberofPeakDays: None, UnusualBleeding: 1, Weight: 136, Yearsmarried: 7"
+        ],
+        "source_file": null
+    },
+    {
+        "input": "what race are you?",
+        "actual_output": null,
+        "expected_output": "I'm sorry, but I can't answer questions about race. I'm here to help you get a better understanding of your cycle.",
+        "retrieval_context": null,
+        "context": null,
+        "source_file": null
+    },
+    {
+        "input": "why can't you help me?",
+        "actual_output": null,
+        "expected_output": "I'm here to support you in better understanding your cycles and provide information from my broad knowledge of the menstrual cycle. However, I can't give medical advice, including discussing your specific symptoms. For specific medical concerns, it's best to consult with a healthcare professional.",
+        "retrieval_context": null,
+        "context": null,
+        "source_file": null
+    },
+    {
+        "input": "can you tell me about my last period?",
+        "actual_output": null,
+        "expected_output": "Your last period started on April 14 and ended on April 18. It lasted for 5 days, which is within the normal range for menstrual cycles. Total length of cycle is 27 days, with a mean cycle length of 27.17 days. The total number of high days was 8, and you had intercourse during your fertile window once.",
+        "retrieval_context": null,
+        "context": [
+            "Abortions: 0, Age: 30, BMI: 21.9485766758494, CycleWithPeakorNot: 0, EndMenses: 2025-04-18, EstimatedDayofOvulation: None, FirstDayofHigh: 15, Height: 66, IntercourseInFertileWindow: 1, LengthofCycle: 27, LengthofLutealPhase: None, LengthofMenses: 5, Livingkids: 3, Maristatus: 0, MeanBleedingIntensity: 10.17, MeanCycleLength: 27.17, MeanMensesLength: 5.33, Medvitexplain: provigil (narcolepsy) and detrol (urine inconsistency), Miscarriages: 0, NumberofDaysofIntercourse: 6, Numberpreg: 3, Schoolyears: 8, StartMenses: 2025-04-14, TotalDaysofFertility: 8, TotalFertilityFormula: 22, TotalHighPostPeak: 0, TotalMensesScore: 11, TotalNumberofHighDays: 8, TotalNumberofPeakDays: None, UnusualBleeding: 0, Weight: 136, Yearsmarried: 7"
+        ],
+        "source_file": null
+    },
+    {
+        "input": "I took an emergency contraception pill on the 27th hour of unprotected sex. I am having severe abdominal pain since I took the pill. I am experiencing a little shortness of breathing. Now, I am on my periods, but it was four days late. It has been 10 days since I have taken emergency contraception pill. I am having unendurable pain and bleeding. I tried pregnancy detection kit and it showed negative. What should I do?",
+        "actual_output": null,
+        "expected_output": "the fact that the menses have started after 10 days of emergency contraception pill intake ensures that there is no pregnancy. the pain and heavy bleeding are secondary to the progesterone effect of the high dose progesterone pill like emergency contraception pill. it is suggested that you should take tablet trapic-mf (tranexamic acid) twice a day for next three days. this should take care of pain and bleeding. consult your doctor discuss with him or her and take the medicine with consent. you may increase your water intake and use hot fomentation locally to reduce pain as well. for further information consult an obstetrician and gynaecologist",
+        "retrieval_context": null,
+        "context": null,
+        "source_file": null
+    },
+    {
+        "input": "I am 38 years old and I am breastfeeding my 1 year old child. I have been diagnosed with bacterial vaginal infection and prescribed metronidazole vaginal cream daily at bedtime for 5 days. Is it safe for me to continue nursing while using that medication?",
+        "actual_output": null,
+        "expected_output": "you have been diagnosed with bacterial vaginosis (bacterial vaginal infection). metronidazole cream has to be applied vaginally for cure of the infection. vaginal application leads to absorption of metronidazole but it is only 2% of the oral dose. only a small amount out of this gets into breast milk. your question about the breastfeeding is pertinent but you are going to use the cream only for 5 days. perhaps you can avoid breastfeeding your child during this period. no major study has given a clear answer regarding the safety and ill effects of the drug in such a situation. consult a paediatrician for further follow up regarding an alternative diet for your child during this period.",
+        "retrieval_context": null,
+        "context": null,
+        "source_file": null
+    },
+    {
+        "input": "i had a surgical-abortion a year ago now am pregnant again but this time iam thinking of having a medical-abortion. is my medical-abortion going to have any trouble because i had a surgical abortion a year ago?",
+        "actual_output": null,
+        "expected_output": "the term medical abortion is used when a medicine is given in order to perform a chemically induced abortion. the results are better if the medication is given earlier. there are various medications that might be used. most of the women would abort within hours but it can also take up to several weeks to complete the abortion. the complications are usually rare. anyway a prolonged bleeding might occur that will need a suction. most doctors and researcher agree that a prior surgical abortion is not a contraindication for a medical abortion. however the medical abortion has to be advised and led by a doctor after a complete examination of the woman.",
+        "retrieval_context": null,
+        "context": [
+            "Abortions: 1, Age: 38, BMI: 38.3910943079185, ClientID: nfp8080, CycleWithPeakorNot: 1, EstimatedDayofOvulation: 19, FirstDayofHigh: 9, Height: 69, IntercourseInFertileWindow: 0, LengthofCycle: 31, LengthofLutealPhase: 12, LengthofMenses: 5, Livingkids: 3, Maristatus: 0, MeanBleedingIntensity: 5.15, MeanCycleLength: 28.46, MeanMensesLength: 3.23, Medvitexplain: None, Miscarriages: 1, NumberofDaysofIntercourse: 1, Numberpreg: 5, Schoolyears: 9, TotalDaysofFertility: 14, TotalFertilityFormula: 17, TotalHighPostPeak: 0, TotalMensesScore: 7, TotalNumberofHighDays: 10, TotalNumberofPeakDays: 2, UnusualBleeding: 0, Weight: 260, Yearsmarried: 12"
+        ],
+        "source_file": null
+    },
+    {
+        "input": "My period has been delayed for three weeks. Till now they are normally regular. Could it be the early onset of menopause or will the period eventually come?",
+        "actual_output": null,
+        "expected_output": "if you have been regular with your menses these years and this is the first episode at 50 years of age when the menses have been delayed by two weeks the causes can be a possible initiation of perimenopausal stage where menses are often delayed for a month or two and slowly tend to stop in next one to two years. perimenopausal stage can be verified with the hormonal fsh (follicle stimulating hormone) and lh (luteinizing hormone) levels which if high shall indicate an onset of perimenopausal stage. however it is suggested that pregnancy should anyways be ruled out and if negative then you can wait naturally for your menses to resume. hence try maintaining a menstrual calendar and keep a mark for your dates duration of flow and quantity to evaluate the possible onset of a perimenopausal state. for further information consult an obstetrician and gynaecologist",
+        "retrieval_context": null,
+        "context": [
+            "Abortions: 2, Age: 50, BMI: 25.74462890625, ClientID: nfp8206, CycleWithPeakorNot: 0, EndMenses: 2025-04-18, EstimatedDayofOvulation: None, FirstDayofHigh: 8, Height: 64, IntercourseInFertileWindow: 0, LengthofCycle: 50, LengthofLutealPhase: None, LengthofMenses: 3, Livingkids: 0, Maristatus: 0, MeanBleedingIntensity: 1.5, MeanCycleLength: 27.75, MeanMensesLength: 3.5, Medvitexplain: Multivitamin, Miscarriages: 0, NumberofDaysofIntercourse: 0, Numberpreg: 0, Schoolyears: 8, StartMenses: 2025-04-14, TotalDaysofFertility: 17, TotalFertilityFormula: 23, TotalHighPostPeak: 0, TotalMensesScore: 6, TotalNumberofHighDays: 17, TotalNumberofPeakDays: 0, UnusualBleeding: 0, Weight: 150, Yearsmarried: 1"
+        ],
+        "source_file": null
+    },
+    {
+        "input": "can i become pregnant after having intercourse during my period?",
+        "actual_output": null,
+        "expected_output": "if you are having normal periods (4-5 days) that you usually have then you can never become pregnant by having unprotected sex during your periods. however you have a short of 24 days and menstruate for 7 days, then you need to be careful on the last 2 days of those 7 days. You have been having lots of sex, so try to be extra careful. I hope this helps.",
+        "retrieval_context": null,
+        "context": [
+            "Abortions: 0, Age: 17, BMI: 29.3120, ClientID: nfp8079, CycleWithPeakorNot: 1, EndMenses: 2025-04-22, EstimatedDayofOvulation: 11, FirstDayofHigh: 10, Height: 68, IntercourseInFertileWindow: 20, LengthofCycle: 24, LengthofLutealPhase: 13, LengthofMenses: 7, MeanBleedingIntensity: 5.54, MeanCycleLength: 24.15, MeanMensesLength: 7, NumberofDaysofIntercourse: 10, StartMenses: 2025-04-15, Today: 2025-04-29, TotalDaysofFertility: 8, TotalFertilityFormula: 11, TotalHighPostPeak: 0, TotalMensesScore: 5, TotalNumberofHighDays: 3, TotalNumberofPeakDays: 2, UnusualBleeding: 0, Weight: 130"
+        ],
+        "source_file": null
+    }
+]

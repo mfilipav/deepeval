@@ -189,7 +189,7 @@ def check_llm_test_case_params(
                 ", ".join(missing_params[:-1]) + ", and " + missing_params[-1]
             )
 
-        error_str = f"{missing_params_str} cannot be None for the '{metric.__name__}' metric"
+        error_str = f"{missing_params_str} cannot be None for the '{metric.__name__}' metric. Test case: {test_case}"
         metric.error = error_str
         raise MissingTestCaseParamsError(error_str)
 

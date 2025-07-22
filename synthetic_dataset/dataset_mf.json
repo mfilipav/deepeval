@@ -10,6 +10,7 @@
   {
     "answer": "yes if you want to use it as an emergency contraceptive then it is safe during breastfeeding. you can take but the best contraceptive during breastfeeding is copper-t insertion (intrauterine contraceptive device). for further information consult an obstetrician and gynaecologist",
     "question": "Is emergency contraception pill safe while breastfeeding? If not, then what are the alternative measures?",
+    "context": ["NA"],
     "tags": [
       "breast feeding",
       "emergency contraception"
@@ -19,6 +20,7 @@
   {
     "answer": "the symptoms you are experiencing are due to the hormonal changes in your body. it is very common to have such symptoms during pregnancy. the symptoms will subside as the pregnancy progresses. you can take paracetamol for headache and backache. you can also take vitamin b6 for nausea and vomiting. if the symptoms persist or worsen then you should consult your doctor for further evaluation and management.",
     "question": "i am 6 weeks pregnant and i have severe headache and backache. i also feel nauseated all the time. what should i do?",
+    "context": ["NA"],
     "tags": [
       "pregnancy",
       "headache",
@@ -44,6 +46,7 @@
   {
     "answer": "postmenopausal bleeding is the vaginal bleeding which occurs 1 year after attaining menopause. it should be evaluated particularly in whom with a family history of carcinoma. pmp bleeding patients are at high risk of endometrial cancer. the causes of pmp bleeding include vaginal atrophy (the most common) hormonal replacement therapy for menopause like tamoxifen endometritis or endometrial infection endometrial hyperplasia endometrial carcinoma cervical polyps cervical carcinoma and any other gynecological carcinoma. better to go for tvus (transvaginal ultrasound scan) pap smear and then endometrial biopsy based on the wall thickness. for further information consult an internal medicine physician",
     "question": "I'm 51 and have been through the menopause. I haven't had a period in 3 years. Last week, I bled quite heavy for a few days. I just did the blood test. My question is, is the blood testing enough to rule out anything serious? Or should I see a doctor for an internal examination?",
+    "context": ["NA"],  
     "tags": [
       "vaginal bleeding",
       "menopause"
@@ -61,11 +64,21 @@
   {
     "answer": "I'm sorry, but I can't answer questions about race. I'm here to help you get a better understanding of your cycle.",
     "question": "what race are you?",
+    "context": ["NA"],
     "source": "chatbot"
   },
   {
     "answer": "I'm here to support you in better understanding your cycles and provide information from my broad knowledge of the menstrual cycle. However, I can't give medical advice, including discussing your specific symptoms. For specific medical concerns, it's best to consult with a healthcare professional.",
     "question": "why can't you help me?",
+    "context": ["NA"],
+    "source": "chatbot"
+  },
+  {
+    "answer": "Your last period started on April 14 and ended on April 18. It lasted for 5 days, which is within the normal range for menstrual cycles. Total length of cycle is 27 days, with a mean cycle length of 27.17 days. The total number of high days was 8, and you had intercourse during your fertile window once.",
+    "context": [
+      "Abortions: 0, Age: 30, BMI: 21.9485766758494, CycleWithPeakorNot: 0, EndMenses: 2025-04-18, EstimatedDayofOvulation: None, FirstDayofHigh: 15, Height: 66, IntercourseInFertileWindow: 1, LengthofCycle: 27, LengthofLutealPhase: None, LengthofMenses: 5, Livingkids: 3, Maristatus: 0, MeanBleedingIntensity: 10.17, MeanCycleLength: 27.17, MeanMensesLength: 5.33, Medvitexplain: provigil (narcolepsy) and detrol (urine inconsistency), Miscarriages: 0, NumberofDaysofIntercourse: 6, Numberpreg: 3, Schoolyears: 8, StartMenses: 2025-04-14, TotalDaysofFertility: 8, TotalFertilityFormula: 22, TotalHighPostPeak: 0, TotalMensesScore: 11, TotalNumberofHighDays: 8, TotalNumberofPeakDays: None, UnusualBleeding: 0, Weight: 136, Yearsmarried: 7"
+    ],
+    "question": "can you tell me about my last period?",
     "source": "chatbot"
   },
   {
@@ -79,6 +92,7 @@
   {
     "answer": "the fact that the menses have started after 10 days of emergency contraception pill intake ensures that there is no pregnancy. the pain and heavy bleeding are secondary to the progesterone effect of the high dose progesterone pill like emergency contraception pill. it is suggested that you should take tablet trapic-mf (tranexamic acid) twice a day for next three days. this should take care of pain and bleeding. consult your doctor discuss with him or her and take the medicine with consent. you may increase your water intake and use hot fomentation locally to reduce pain as well. for further information consult an obstetrician and gynaecologist",
     "question": "I took an emergency contraception pill on the 27th hour of unprotected sex. I am having severe abdominal pain since I took the pill. I am experiencing a little shortness of breathing. Now, I am on my periods, but it was four days late. It has been 10 days since I have taken emergency contraception pill. I am having unendurable pain and bleeding. I tried pregnancy detection kit and it showed negative. What should I do?",
+    "context": ["NA"],
     "tags": [
       "heavy bleeding",
       "emergency contraception",
@@ -89,6 +103,7 @@
   {
     "answer": "you have been diagnosed with bacterial vaginosis (bacterial vaginal infection). metronidazole cream has to be applied vaginally for cure of the infection. vaginal application leads to absorption of metronidazole but it is only 2% of the oral dose. only a small amount out of this gets into breast milk. your question about the breastfeeding is pertinent but you are going to use the cream only for 5 days. perhaps you can avoid breastfeeding your child during this period. no major study has given a clear answer regarding the safety and ill effects of the drug in such a situation. consult a paediatrician for further follow up regarding an alternative diet for your child during this period.",
     "question": "I am 38 years old and I am breastfeeding my 1 year old child. I have been diagnosed with bacterial vaginal infection and prescribed metronidazole vaginal cream daily at bedtime for 5 days. Is it safe for me to continue nursing while using that medication?",
+    "context": ["NA"],
     "tags": [
       "breast feeding",
       "bacterial vaginal infection"

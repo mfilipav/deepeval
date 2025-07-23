@@ -16,6 +16,7 @@ from .hallucination.hallucination import HallucinationMetric
 from .answer_relevancy.answer_relevancy import AnswerRelevancyMetric
 from .summarization.summarization import SummarizationMetric
 from .g_eval.g_eval import GEval
+from .m_eval.m_eval import MEval
 from .arena_g_eval.arena_g_eval import ArenaGEval
 from .faithfulness.faithfulness import FaithfulnessMetric
 from .contextual_recall.contextual_recall import ContextualRecallMetric

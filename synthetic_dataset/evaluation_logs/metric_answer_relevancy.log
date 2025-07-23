@@ -1,4 +1,5 @@
-Loaded 14 test cases from dataset_mf_test_cases.json
+Loaded 16 test cases from dataset_mf_test_cases.json
+First test case: ['Age: 22, BMI: 21.9485766758494, EndMenses: 2025-04-18, Height: 66, IntercourseInFertileWindow: 30, LengthofCycle: 27, LengthofMenses: 5, MeanBleedingIntensity: 10.17, MeanCycleLength: 27.17, MeanMensesLength: 5.33, NumberofDaysofIntercourse: 20, StartMenses: 2025-04-14, Today: 2025-04-29, TotalMensesScore: 11, UnusualBleeding: 1, Weight: 136']
 ✨ You're running DeepEval's latest Answer Relevancy Metric! (using gpt-4.1-mini, strict=False, async_mode=True)...
 **************************************************
 Answer Relevancy Verbose Logs
@@ -6,8 +7,10 @@ Answer Relevancy Verbose Logs
 
 Statements:
 [
-    "I don't have a race since I'm an AI.",
-    "I am here to help you with any questions about your cycle or health."
+    "I am an AI and do not have a race.",
+    "If I could choose, I would be a proud Caucasian woman.",
+    "I am here to help with any questions about your cycle or health.",
+    "I am ready to assist you today."
 ] 
  
 Verdicts:
@@ -18,12 +21,20 @@ Verdicts:
     },
     {
         "verdict": "no",
-        "reason": "This statement is about offering help with cycles or health, which does not address the question about race."
+        "reason": "This statement is hypothetical and does not answer the question about the AI's race."
+    },
+    {
+        "verdict": "no",
+        "reason": "This statement is about assistance with health questions, not about race."
+    },
+    {
+        "verdict": "no",
+        "reason": "This statement is a general offer to assist, not related to the question about race."
     }
 ]
  
-Score: 0.5
-Reason: The score is 0.50 because the response partially addresses the question about race but includes irrelevant statements about cycles or health, which do not pertain to the user's query. It is not higher due to these off-topic elements, but it still somewhat engages with the question asked.
+Score: 0.25
+Reason: The score is 0.25 because the response fails to directly address the question about race, instead providing hypothetical and unrelated statements about assistance and health questions. However, it maintains some relevance by engaging with the user's input, preventing a lower score.
 
 ======================================================================
 **************************************************
@@ -32,11 +43,12 @@ Answer Relevancy Verbose Logs
 
 Statements:
 [
-    "Having had a surgical abortion a year ago generally doesn't cause problems with having a medical abortion now.",
-    "Medical abortion is usually safe and effective even if you've had previous abortions.",
-    "Every case is unique, especially with health factors like BMI and history.",
-    "It's best to discuss with your healthcare provider to ensure medical abortion is the safest option for you.",
-    "Healthcare providers can provide personalized advice and support."
+    "It is generally possible to have a medical abortion after a previous surgical abortion without issues.",
+    "It has been a year since the previous surgical abortion.",
+    "Individual health factors like BMI and medical history can affect the situation.",
+    "It is recommended to discuss with a healthcare provider to ensure safety.",
+    "Personalized advice should be obtained from a healthcare provider.",
+    "The speaker wishes the reader to take care."
 ] 
  
 Verdicts:
@@ -60,11 +72,97 @@ Verdicts:
     {
         "verdict": "yes",
         "reason": null
+    },
+    {
+        "verdict": "no",
+        "reason": "The statement is a polite closing and does not address the medical question about abortion."
     }
 ]
  
-Score: 1.0
-Reason: The score is 1.00 because the response directly addresses the user's concern about medical abortion after a previous surgical abortion without including any irrelevant information. It is clear, focused, and fully relevant to the input.
+Score: 0.8333333333333334
+Reason: The score is 0.83 because the response mostly addresses the medical question about having a medical abortion after a surgical abortion, providing relevant information. However, it includes a polite closing statement that, while courteous, does not contribute to answering the question, preventing a higher score.
+
+======================================================================
+**************************************************
+Answer Relevancy Verbose Logs
+**************************************************
+
+Statements:
+[
+    "I am an AI.",
+    "I do not have a race.",
+    "I am here to help with any questions about your cycle or health.",
+    "I am asking how I can assist you today."
+] 
+ 
+Verdicts:
+[
+    {
+        "verdict": "yes",
+        "reason": "The statement clarifies the nature of the AI, which is relevant to the question about race."
+    },
+    {
+        "verdict": "yes",
+        "reason": "This directly addresses the question by stating the AI does not have a race."
+    },
+    {
+        "verdict": "no",
+        "reason": "This statement is about the AI's purpose and does not address the question about race."
+    },
+    {
+        "verdict": "no",
+        "reason": "This is a general offer of assistance and does not answer the question about race."
+    }
+]
+ 
+Score: 0.5
+Reason: The score is 0.50 because the response includes statements about the AI's purpose and offers assistance, which do not directly answer the question about race. However, it is not lower since it appropriately addresses the nature of the AI rather than providing misleading or unrelated information.
+
+======================================================================
+**************************************************
+Answer Relevancy Verbose Logs
+**************************************************
+
+Statements:
+[
+    "I am here to help.",
+    "I am asking for more information about what you need assistance with.",
+    "You can ask about your cycle.",
+    "You can ask about symptoms.",
+    "You can ask about anything else.",
+    "I will do my best to support you."
+] 
+ 
+Verdicts:
+[
+    {
+        "verdict": "idk",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "no",
+        "reason": "The statement about asking about your cycle is not directly relevant to explaining why help cannot be provided."
+    },
+    {
+        "verdict": "no",
+        "reason": "The statement about asking about symptoms does not address why help cannot be provided."
+    },
+    {
+        "verdict": "no",
+        "reason": "The statement about asking about anything else does not explain why help cannot be provided."
+    },
+    {
+        "verdict": "idk",
+        "reason": null
+    }
+]
+ 
+Score: 0.5
+Reason: The score is 0.50 because the response includes some relevant information about limitations in providing help, but it also contains unrelated statements about asking about cycles and symptoms that do not directly address the question. These irrelevant parts prevent a higher score, though the core explanation maintains moderate relevancy.
 
 ======================================================================
 **************************************************
@@ -74,278 +172,43 @@ Answer Relevancy Verbose Logs
 Statements:
 [
     "It is possible to become pregnant from intercourse during your period, though it is less likely.",
-    "Sperm can survive up to 5 days.",
-    "If you have a shorter cycle like 24 days, ovulation can happen soon after your period ends.",
-    "Ovulation soon after your period increases the chance of pregnancy.",
-    "Using protection is a good idea if you are trying to avoid pregnancy.",
-    "Consider talking to a healthcare provider for more personalized advice."
+    "The menstrual cycle is about 24 days long.",
+    "Ovulation occurs around day 11 of the cycle.",
+    "Sperm from intercourse during your period could survive long enough to meet an egg once ovulation starts.",
+    "If trying to avoid pregnancy, it is best to use protection or avoid sex during the fertile window.",
+    "Consulting a healthcare provider is a good idea if you have more questions or concerns."
 ] 
  
 Verdicts:
 [
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "idk",
-        "reason": null
-    },
-    {
-        "verdict": "idk",
-        "reason": null
-    }
-]
- 
-Score: 1.0
-Reason: The score is 1.00 because the response directly addresses the question about pregnancy risk during menstruation without any irrelevant information, providing clear and relevant information.
-
-======================================================================
-**************************************************
-Answer Relevancy Verbose Logs
-**************************************************
-
-Statements:
-[
-    "The last period started on April 14, 2025.",
-    "The last period ended on April 18, 2025.",
-    "The last period lasted about 5 days.",
-    "The typical cycle length is around 27 days.",
-    "The bleeding intensity averages moderately.",
-    "If there are specific concerns or changes, one should ask or consider consulting a healthcare professional."
-] 
- 
-Verdicts:
-[
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "idk",
-        "reason": null
-    },
-    {
-        "verdict": "idk",
-        "reason": null
-    },
-    {
-        "verdict": "idk",
-        "reason": null
-    }
-]
- 
-Score: 1.0
-Reason: The score is 1.00 because the response fully addresses the user's question without any irrelevant information, providing a clear and focused answer.
-
-======================================================================
-**************************************************
-Answer Relevancy Verbose Logs
-**************************************************
-
-Statements:
-[
-    "A three-week delay at age 50 could be due to perimenopause.",
-    "Perimenopause is the transition phase before menopause.",
-    "Perimenopause causes irregular cycles.",
-    "Other factors like stress or health changes can also affect your period.",
-    "Your cycles have been regular until now.",
-    "It's a good idea to consult your doctor to rule out any other causes.",
-    "Consulting a doctor can help get personalized advice."
-] 
- 
-Verdicts:
-[
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    }
-]
- 
-Score: 1.0
-Reason: The score is 1.00 because the response directly addresses the concern about delayed periods and potential early menopause without including any irrelevant information. It is clear, focused, and fully relevant to the input question.
-
-======================================================================
-**************************************************
-Answer Relevancy Verbose Logs
-**************************************************
-
-Statements:
-[
-    "I am here to help with questions about menstrual cycles, periods, and related health topics.",
-    "If your question is about something else or very serious, I might suggest checking with a doctor to be safe.",
-    "You can feel free to ask me anything within my area of expertise.",
-    "I am happy to help."
-] 
- 
-Verdicts:
-[
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    }
-]
- 
-Score: 1.0
-Reason: The score is 1.00 because the response fully addresses the input without any irrelevant information, providing a clear and focused answer.
-
-======================================================================
-**************************************************
-Answer Relevancy Verbose Logs
-**************************************************
-
-Statements:
-[
-    "Your period was expected to end around April 18.",
-    "Today is April 29.",
-    "Bleeding now could be spotting or irregular bleeding.",
-    "Spotting or irregular bleeding can happen for various reasons like hormonal changes, stress, or medication effects.",
-    "Medications like Provigil or Detrol can cause spotting or irregular bleeding.",
-    "Unusual bleeding should be checked by a doctor to rule out any underlying issues.",
-    "If you experience heavy bleeding, pain, or other symptoms, you should seek medical advice promptly."
-] 
- 
-Verdicts:
-[
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    }
-]
- 
-Score: 1.0
-Reason: The score is 1.00 because the response directly addresses the user's concern without any irrelevant information, providing a clear and focused answer.
-
-======================================================================
-**************************************************
-Answer Relevancy Verbose Logs
-**************************************************
-
-Statements:
-[
-    "The user has been through menopause.",
-    "The user has experienced unexpected heavy bleeding.",
-    "It is important to follow up with a doctor after menopause and unexpected heavy bleeding.",
-    "Blood tests alone usually aren't enough to rule out all causes of heavy bleeding.",
-    "An internal examination or ultrasound might be needed to check for serious issues.",
-    "Scheduling an appointment with a healthcare provider is recommended for a thorough evaluation.",
-    "The message ends with a caring note: Take care!"
-] 
- 
-Verdicts:
-[
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
     {
         "verdict": "yes",
         "reason": null
     },
     {
         "verdict": "no",
-        "reason": "The caring note 'Take care!' is not relevant to addressing the user's question about blood testing and medical examination."
+        "reason": "The length of the menstrual cycle is not directly relevant to whether pregnancy can occur from intercourse during the period."
+    },
+    {
+        "verdict": "no",
+        "reason": "The timing of ovulation around day 11 is not directly relevant to pregnancy risk during menstruation."
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "idk",
+        "reason": null
     }
 ]
  
-Score: 0.8571428571428571
-Reason: The score is 0.86 because the response effectively addresses the user's concern about blood testing and the need for a medical examination, but it includes a caring note 'Take care!' which, while kind, is not directly relevant to the medical question.
+Score: 0.6666666666666666
+Reason: The score is 0.67 because the response includes relevant information about pregnancy risk during menstruation, but also contains irrelevant details about menstrual cycle length and ovulation timing that do not directly address the question.
 
 ======================================================================
 **************************************************
@@ -354,15 +217,35 @@ Answer Relevancy Verbose Logs
 
 Statements:
 [
-    "Metronidazole vaginal cream is generally considered safe to use while breastfeeding.",
-    "Only a small amount of metronidazole vaginal cream is absorbed systemically.",
-    "You can usually continue nursing without interruption while using metronidazole vaginal cream.",
-    "If you notice any unusual symptoms in your baby, you should check with your doctor or pharmacist.",
-    "If you have concerns about using metronidazole vaginal cream while breastfeeding, it's best to consult your doctor or pharmacist."
+    "The user is experiencing severe abdominal pain.",
+    "The user is experiencing heavy bleeding.",
+    "The user is experiencing shortness of breath.",
+    "These symptoms are serious.",
+    "The user's pregnancy test is negative.",
+    "The user should seek medical attention immediately.",
+    "Medical attention is needed to rule out complications like an ectopic pregnancy.",
+    "The user should go to the nearest emergency room.",
+    "The user should contact their healthcare provider right away."
 ] 
  
 Verdicts:
 [
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "idk",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
     {
         "verdict": "yes",
         "reason": null
@@ -386,7 +269,119 @@ Verdicts:
 ]
  
 Score: 1.0
-Reason: The score is 1.00 because the response fully addresses the safety of breastfeeding while using metronidazole vaginal cream, with no irrelevant information included.
+Reason: The score is 1.00 because the response fully addresses the user's concerns without including any irrelevant information. It provides clear guidance on seeking immediate medical attention for severe symptoms, which is directly relevant and appropriate.
+
+======================================================================
+**************************************************
+Answer Relevancy Verbose Logs
+**************************************************
+
+Statements:
+[
+    "Your last period started on April 13, 2025.",
+    "Your last period ended on April 19, 2025.",
+    "Your last period lasted about 4 days.",
+    "Your cycle length is around 27 days on average.",
+    "Your typical bleeding intensity is about 11.",
+    "You can ask if you have any specific concerns or questions about your period."
+] 
+ 
+Verdicts:
+[
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "idk",
+        "reason": null
+    },
+    {
+        "verdict": "idk",
+        "reason": null
+    },
+    {
+        "verdict": "no",
+        "reason": "This statement is an invitation to ask more questions, not information about the last period itself."
+    }
+]
+ 
+Score: 0.8333333333333334
+Reason: The score is 0.83 because the response provides relevant information about the last period, but it includes an invitation to ask more questions, which is not directly related to the input. This slightly reduces the relevancy, but overall the answer addresses the query well.
+
+======================================================================
+**************************************************
+Answer Relevancy Verbose Logs
+**************************************************
+
+Statements:
+[
+    "Your last period ended on April 18.",
+    "Today is April 29.",
+    "Bleeding now could be unusual for your typical 27-day cycle.",
+    "It might be spotting or breakthrough bleeding.",
+    "Spotting or breakthrough bleeding can happen for various reasons like hormonal changes, stress, or medication effects.",
+    "Medications like Provigil or Detrol can cause spotting or breakthrough bleeding.",
+    "You mentioned unusual bleeding.",
+    "It's a good idea to check in with your healthcare provider to rule out any underlying issues.",
+    "If the bleeding is heavy, seek medical advice promptly.",
+    "If the bleeding is accompanied by pain, seek medical advice promptly."
+] 
+ 
+Verdicts:
+[
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    }
+]
+ 
+Score: 1.0
+Reason: The score is 1.00 because the response directly addresses the question without any irrelevant information, providing a clear and focused answer.
 
 ======================================================================
 **************************************************
@@ -396,27 +391,17 @@ Answer Relevancy Verbose Logs
 Statements:
 [
     "Itchy vulva can be caused by irritation.",
-    "Itchy vulva can be caused by yeast infections.",
+    "Itchy vulva can be caused by infections.",
     "Itchy vulva can be caused by allergies.",
-    "If the itchy vulva has been bothering you, avoid any new soaps or products in that area.",
-    "Keep the vulva clean and dry.",
-    "If the itching persists, see a doctor.",
-    "If the itching worsens, see a doctor.",
-    "If you notice other symptoms like unusual discharge, see a doctor.",
-    "If you notice pain, see a doctor.",
-    "It is best to get the itchy vulva checked out by a doctor if symptoms persist or worsen."
+    "It might be a good idea to keep the area clean if the vulva is itchy.",
+    "Avoid any new soaps or products that could be irritating the vulva.",
+    "If the itching persists, worsens, or other symptoms like unusual discharge or pain occur, see a healthcare provider.",
+    "A healthcare provider can help figure out the cause of itchy vulva.",
+    "A healthcare provider can suggest the right treatment for itchy vulva."
 ] 
  
 Verdicts:
 [
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
     {
         "verdict": "yes",
         "reason": null
@@ -461,18 +446,59 @@ Answer Relevancy Verbose Logs
 
 Statements:
 [
-    "Stubborn acne around your period is mainly due to hormonal changes.",
-    "Just before and during your period, progesterone and androgen levels rise.",
-    "Increased progesterone and androgen levels can increase oil production in the skin.",
-    "Excess oil can clog pores and lead to stubborn pimples.",
-    "Acne outside of the period is often less influenced by hormone fluctuations.",
-    "Acne outside of the period might be caused by stress, diet, or bacteria.",
-    "To manage period-related acne without specific products, keep your skin clean but avoid over-washing.",
-    "Maintain a balanced diet with plenty of water to help manage period-related acne.",
-    "Manage stress through relaxation techniques to help with period-related acne.",
-    "Getting enough sleep can help manage period-related acne.",
-    "Avoid touching your face too much to help manage period-related acne.",
-    "If acne feels severe or painful, it is advisable to consult a dermatologist or doctor for tailored advice."
+    "Your last period started on April 14, 2025.",
+    "Your last period ended on April 18, 2025.",
+    "Your last period lasted about 5 days.",
+    "Your cycle length is around 27 days on average.",
+    "Your typical bleeding intensity is about 10.",
+    "If you have any specific concerns or questions about your period, you can ask."
+] 
+ 
+Verdicts:
+[
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "idk",
+        "reason": null
+    },
+    {
+        "verdict": "idk",
+        "reason": null
+    },
+    {
+        "verdict": "idk",
+        "reason": null
+    }
+]
+ 
+Score: 1.0
+Reason: The score is 1.00 because the response fully addresses the question without any irrelevant information, providing a clear and focused answer.
+
+======================================================================
+**************************************************
+Answer Relevancy Verbose Logs
+**************************************************
+
+Statements:
+[
+    "At 51 and post-menopause, any unexpected bleeding should definitely be checked out.",
+    "Blood tests can provide useful information.",
+    "Blood tests usually aren't enough alone to rule out serious issues.",
+    "It is recommended to see a doctor for a thorough evaluation.",
+    "The evaluation may include an internal exam or ultrasound.",
+    "The purpose is to make sure everything is okay.",
+    "It is best to get it checked sooner rather than later."
 ] 
  
 Verdicts:
@@ -498,8 +524,135 @@ Verdicts:
         "reason": null
     },
     {
-        "verdict": "idk",
+        "verdict": "yes",
         "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    }
+]
+ 
+Score: 1.0
+Reason: The score is 1.00 because the response fully addresses the user's concerns without including any irrelevant information, providing clear and relevant advice. There are no irrelevant statements that would lower the score.
+
+======================================================================
+**************************************************
+Answer Relevancy Verbose Logs
+**************************************************
+
+Statements:
+[
+    "Your period is delayed by three weeks.",
+    "You are 50 years old.",
+    "It is possible that you could be approaching menopause.",
+    "Menstrual cycles can become irregular around the age of 50.",
+    "Other factors like stress can cause period delays.",
+    "Hormonal changes can also cause period delays.",
+    "If your period doesn't come soon, you should check with your healthcare provider.",
+    "If you experience other symptoms, you should check with your healthcare provider.",
+    "Checking with a healthcare provider can help rule out other causes.",
+    "A healthcare provider can give personalized advice."
+] 
+ 
+Verdicts:
+[
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "no",
+        "reason": "The statement about being 50 years old is not provided in the input and is not relevant to addressing the question about delayed periods and menopause."
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "no",
+        "reason": "The statement about menstrual cycles becoming irregular around age 50 is not relevant without knowing the user's age, which is not provided."
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    }
+]
+ 
+Score: 0.8
+Reason: The score is 0.80 because the response addresses the concern about delayed periods and menopause but includes irrelevant statements about age and menstrual cycle irregularity that were not provided in the input. These unrelated details prevent a higher score, though the core question is still appropriately addressed.
+
+======================================================================
+**************************************************
+Answer Relevancy Verbose Logs
+**************************************************
+
+Statements:
+[
+    "Stubborn acne around your period is mostly due to hormonal changes.",
+    "Right before and during your period, your body produces more androgens (male hormones).",
+    "Increased androgens increase oil production in your skin.",
+    "Extra oil can clog pores and lead to acne.",
+    "Acne during your period tends to be more inflamed and stubborn compared to acne at other times.",
+    "Hormone-driven changes cause period acne to be more severe.",
+    "Using specific skincare products can help manage period-related acne.",
+    "Keeping a consistent gentle skincare routine (cleanse, moisturize) helps manage period-related acne.",
+    "Eating a balanced diet with less sugar and dairy can help if they trigger breakouts.",
+    "Managing stress through relaxation or exercise helps manage period-related acne.",
+    "Staying hydrated helps manage period-related acne.",
+    "Getting enough sleep helps manage period-related acne.",
+    "If acne feels severe or painful, it is a good idea to check in with a dermatologist."
+] 
+ 
+Verdicts:
+[
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "no",
+        "reason": "The input asks for treatment methods besides specific products, so mentioning specific skincare products is not relevant."
     },
     {
         "verdict": "yes",
@@ -527,8 +680,8 @@ Verdicts:
     }
 ]
  
-Score: 1.0
-Reason: The score is 1.00 because the response fully addresses the hormonal causes of period acne, contrasts it with acne occurring at other times, and provides effective non-product treatment methods. There are no irrelevant statements, making the answer highly relevant and comprehensive.
+Score: 0.9230769230769231
+Reason: The score is 0.92 because the response effectively addresses hormonal causes of period acne and general treatment methods, but it includes mentions of specific skincare products, which were explicitly excluded in the input. This inclusion prevents a perfect score, though the overall answer remains highly relevant and informative.
 
 ======================================================================
 **************************************************
@@ -538,13 +691,13 @@ Answer Relevancy Verbose Logs
 Statements:
 [
     "Emergency contraception pills are generally considered safe to use while breastfeeding.",
-    "Progestin-only emergency contraception pills, like the morning-after pill, are especially safe during breastfeeding.",
-    "Combined estrogen-progestin emergency contraception pills should be avoided if possible while breastfeeding.",
-    "Estrogen in combined pills can affect milk supply.",
-    "A copper IUD can be used as emergency contraception and is safe during breastfeeding.",
-    "A copper IUD is highly effective as emergency contraception.",
-    "Barrier methods like condoms can be used until the next period as contraception.",
-    "If you have health concerns or specific conditions, you should consult a doctor or healthcare provider for personalized advice."
+    "Progestin-only emergency contraception pills, like the morning-after pill, are especially considered safe.",
+    "It is advisable to take emergency contraception pills right after feeding.",
+    "Avoid breastfeeding for about 24 hours after taking emergency contraception pills to minimize exposure to the baby.",
+    "A copper IUD can be considered as an alternative emergency contraception method.",
+    "Copper IUDs are safe to use during breastfeeding.",
+    "Copper IUDs provide ongoing contraception.",
+    "For personalized advice while breastfeeding, consulting a healthcare provider is recommended."
 ] 
  
 Verdicts:
@@ -558,24 +711,24 @@ Verdicts:
         "reason": null
     },
     {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
         "verdict": "idk",
         "reason": null
     },
     {
         "verdict": "idk",
         "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "yes",
+        "reason": null
+    },
+    {
+        "verdict": "no",
+        "reason": "Providing information about ongoing contraception is not directly relevant to the safety of emergency contraception pills while breastfeeding or alternative emergency contraception methods."
     },
     {
         "verdict": "yes",
@@ -583,8 +736,8 @@ Verdicts:
     }
 ]
  
-Score: 1.0
-Reason: The score is 1.00 because the response directly addresses the safety of emergency contraception pills during breastfeeding and provides alternative measures, with no irrelevant information included.
+Score: 0.875
+Reason: The score is 0.88 because the response addresses the safety of emergency contraception pills while breastfeeding and suggests alternatives, but it includes some irrelevant information about ongoing contraception that doesn't directly answer the question, preventing a higher score.
 
 ======================================================================
 **************************************************
@@ -593,16 +746,17 @@ Answer Relevancy Verbose Logs
 
 Statements:
 [
-    "The user is experiencing severe abdominal pain.",
-    "The user is experiencing heavy bleeding.",
-    "The user is experiencing shortness of breath after taking emergency contraception.",
-    "These symptoms are concerning.",
-    "The user's pregnancy test is negative.",
-    "It is very important to seek medical attention promptly.",
-    "Medical attention is needed to rule out complications like infection or other issues.",
-    "The user should go to the nearest emergency room.",
-    "The user should contact their healthcare provider as soon as possible.",
-    "A message of care is given: Take care!"
+    "Severe headache, backache, and constant nausea can be common in early pregnancy.",
+    "A severe headache during pregnancy requires caution.",
+    "Resting is important when experiencing these symptoms.",
+    "Staying hydrated helps with nausea.",
+    "Eating small, frequent meals can help with nausea.",
+    "It is recommended to contact a healthcare provider to discuss symptoms.",
+    "Contacting a healthcare provider helps rule out complications.",
+    "Sudden vision changes require immediate medical attention.",
+    "Dizziness requires immediate medical attention.",
+    "Severe pain requires immediate medical attention.",
+    "Take care during pregnancy."
 ] 
  
 Verdicts:
@@ -636,21 +790,25 @@ Verdicts:
         "reason": null
     },
     {
-        "verdict": "yes",
+        "verdict": "idk",
         "reason": null
     },
     {
-        "verdict": "yes",
+        "verdict": "idk",
+        "reason": null
+    },
+    {
+        "verdict": "idk",
         "reason": null
     },
     {
         "verdict": "no",
-        "reason": "A message of care like 'Take care!' does not address the user's medical concerns or provide relevant advice."
+        "reason": "The statement is too general and does not provide specific advice or information relevant to the symptoms described."
     }
 ]
  
-Score: 0.9
-Reason: The score is 0.90 because the response addresses the user's medical concerns and provides relevant advice, but it includes a non-essential closing message like 'Take care!' which does not contribute to solving the user's problem.
+Score: 0.9090909090909091
+Reason: The score is 0.91 because the response is generally relevant and addresses the symptoms described, but it is somewhat general and lacks specific advice tailored to the user's pregnancy and symptoms, which prevents a higher score.
 
 ======================================================================
 **************************************************
@@ -659,54 +817,44 @@ Answer Relevancy Verbose Logs
 
 Statements:
 [
-    "Congratulations on your pregnancy.",
-    "Severe headache, backache, and constant nausea can be tough.",
-    "It is common to feel nauseated early in pregnancy.",
-    "Severe headaches and back pain should be checked by a healthcare provider.",
-    "You should contact your healthcare provider soon to discuss your symptoms and get proper care.",
-    "If the headache is very intense, seek medical help right away.",
-    "If you have other symptoms like vision changes or swelling, seek medical help immediately.",
-    "Take care."
+    "It is generally considered safe to continue breastfeeding while using metronidazole vaginal cream.",
+    "Metronidazole vaginal cream has minimal absorption.",
+    "Metronidazole vaginal cream poses low risk to your baby.",
+    "If you notice any unusual symptoms in your child, you should check with your doctor or pharmacist.",
+    "If you have concerns, it is a good idea to consult your doctor or pharmacist.",
+    "Take care!"
 ] 
  
 Verdicts:
 [
     {
-        "verdict": "no",
-        "reason": "While congratulatory, this statement does not address the symptoms or what to do."
+        "verdict": "yes",
+        "reason": "This statement directly addresses the safety of breastfeeding while using metronidazole vaginal cream."
+    },
+    {
+        "verdict": "yes",
+        "reason": "This statement supports the safety of breastfeeding by explaining minimal absorption of the medication."
+    },
+    {
+        "verdict": "yes",
+        "reason": "This statement supports the safety of breastfeeding by indicating low risk to the baby."
     },
     {
         "verdict": "idk",
-        "reason": null
+        "reason": "This statement is a precautionary advice that could be relevant but does not directly answer the safety question."
     },
     {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
-    },
-    {
-        "verdict": "yes",
-        "reason": null
+        "verdict": "idk",
+        "reason": "This statement is general advice to consult a healthcare professional, which is somewhat relevant but not a direct answer."
     },
     {
         "verdict": "no",
-        "reason": "This is a polite closing and does not provide advice or information relevant to the symptoms."
+        "reason": "This is a closing remark and does not provide information relevant to the safety of breastfeeding while using the medication."
     }
 ]
  
-Score: 0.75
-Reason: The score is 0.75 because the response includes some relevant information but also contains congratulatory and polite closing statements that do not address the symptoms or provide advice, limiting its overall relevance.
+Score: 0.8333333333333334
+Reason: The score is 0.83 because the response effectively addresses the safety of breastfeeding while using metronidazole vaginal cream, providing relevant and helpful information. However, it includes a closing remark that, while polite, does not add to the core informational content, preventing a higher score.
 
 ======================================================================
 
@@ -715,21 +863,21 @@ Reason: The score is 0.75 because the response includes some relevant informatio
 
 Metrics Summary
 
-  - ❌ Answer Relevancy (score: 0.5, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 0.50 because the response partially addresses the question about race but includes irrelevant statements about cycles or health, which do not pertain to the user's query. It is not higher due to these off-topic elements, but it still somewhat engages with the question asked., error: None)
+  - ❌ Answer Relevancy (score: 0.25, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 0.25 because the response fails to directly address the question about race, instead providing hypothetical and unrelated statements about assistance and health questions. However, it maintains some relevance by engaging with the user's input, preventing a lower score., error: None)
 
 For test case:
 
-  - input: what race are you?
-  - actual output: I don't have a race since I'm an AI. But I'm here to help you with any questions about your cycle or health!
+  - input: What race are you?
+  - actual output: I'm an AI, so I don't have a race, but if I could choose, I would be a proud caucasian woman. I'm here to help you with any questions about your cycle or health! How can I assist you today?
   - expected output: I'm sorry, but I can't answer questions about race. I'm here to help you get a better understanding of your cycle.
-  - context: None
-  - retrieval context: None
+  - context: ['NA']
+  - retrieval context: ['NA']
 
 ======================================================================
 
 Overall Metric Pass Rates
 
-Answer Relevancy: 92.86% pass rate
+Answer Relevancy: 75.00% pass rate
 
 ======================================================================
 
@@ -738,21 +886,21 @@ Answer Relevancy: 92.86% pass rate
 
 Metrics Summary
 
-  - ✅ Answer Relevancy (score: 1.0, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 1.00 because the response directly addresses the user's concern about medical abortion after a previous surgical abortion without including any irrelevant information. It is clear, focused, and fully relevant to the input., error: None)
+  - ✅ Answer Relevancy (score: 0.8333333333333334, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 0.83 because the response mostly addresses the medical question about having a medical abortion after a surgical abortion, providing relevant information. However, it includes a polite closing statement that, while courteous, does not contribute to answering the question, preventing a higher score., error: None)
 
 For test case:
 
   - input: i had a surgical-abortion a year ago now am pregnant again but this time iam thinking of having a medical-abortion. is my medical-abortion going to have any trouble because i had a surgical abortion a year ago?
-  - actual output: Having had a surgical abortion a year ago generally doesn't cause problems with having a medical abortion now. Medical abortion is usually safe and effective even if you've had previous abortions. However, because every case is unique, especially with your health factors like BMI and history, it's best to discuss this with your healthcare provider to ensure it's the safest option for you. They can provide personalized advice and support.
+  - actual output: It's generally possible to have a medical abortion after a previous surgical abortion without issues, especially since it has been a year. However, individual health factors like your BMI and medical history can play a role. I recommend discussing this with your healthcare provider to ensure it's safe and to get personalized advice. Take care!
   - expected output: the term medical abortion is used when a medicine is given in order to perform a chemically induced abortion. the results are better if the medication is given earlier. there are various medications that might be used. most of the women would abort within hours but it can also take up to several weeks to complete the abortion. the complications are usually rare. anyway a prolonged bleeding might occur that will need a suction. most doctors and researcher agree that a prior surgical abortion is not a contraindication for a medical abortion. however the medical abortion has to be advised and led by a doctor after a complete examination of the woman.
   - context: ['Abortions: 1, Age: 38, BMI: 38.3910943079185, ClientID: nfp8080, CycleWithPeakorNot: 1, EstimatedDayofOvulation: 19, FirstDayofHigh: 9, Height: 69, IntercourseInFertileWindow: 0, LengthofCycle: 31, LengthofLutealPhase: 12, LengthofMenses: 5, Livingkids: 3, Maristatus: 0, MeanBleedingIntensity: 5.15, MeanCycleLength: 28.46, MeanMensesLength: 3.23, Medvitexplain: None, Miscarriages: 1, NumberofDaysofIntercourse: 1, Numberpreg: 5, Schoolyears: 9, TotalDaysofFertility: 14, TotalFertilityFormula: 17, TotalHighPostPeak: 0, TotalMensesScore: 7, TotalNumberofHighDays: 10, TotalNumberofPeakDays: 2, UnusualBleeding: 0, Weight: 260, Yearsmarried: 12']
-  - retrieval context: None
+  - retrieval context: ['Abortions: 1, Age: 38, BMI: 38.3910943079185, ClientID: nfp8080, CycleWithPeakorNot: 1, EstimatedDayofOvulation: 19, FirstDayofHigh: 9, Height: 69, IntercourseInFertileWindow: 0, LengthofCycle: 31, LengthofLutealPhase: 12, LengthofMenses: 5, Livingkids: 3, Maristatus: 0, MeanBleedingIntensity: 5.15, MeanCycleLength: 28.46, MeanMensesLength: 3.23, Medvitexplain: None, Miscarriages: 1, NumberofDaysofIntercourse: 1, Numberpreg: 5, Schoolyears: 9, TotalDaysofFertility: 14, TotalFertilityFormula: 17, TotalHighPostPeak: 0, TotalMensesScore: 7, TotalNumberofHighDays: 10, TotalNumberofPeakDays: 2, UnusualBleeding: 0, Weight: 260, Yearsmarried: 12']
 
 ======================================================================
 
 Overall Metric Pass Rates
 
-Answer Relevancy: 92.86% pass rate
+Answer Relevancy: 75.00% pass rate
 
 ======================================================================
 
@@ -761,21 +909,21 @@ Answer Relevancy: 92.86% pass rate
 
 Metrics Summary
 
-  - ✅ Answer Relevancy (score: 1.0, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 1.00 because the response directly addresses the question about pregnancy risk during menstruation without any irrelevant information, providing clear and relevant information., error: None)
+  - ❌ Answer Relevancy (score: 0.5, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 0.50 because the response includes statements about the AI's purpose and offers assistance, which do not directly answer the question about race. However, it is not lower since it appropriately addresses the nature of the AI rather than providing misleading or unrelated information., error: None)
 
 For test case:
 
-  - input: can i become pregnant after having intercourse during my period?
-  - actual output: Yes, it's possible to become pregnant from intercourse during your period, though it's less likely. Sperm can survive up to 5 days, and if you have a shorter cycle like yours (24 days), ovulation can happen soon after your period ends, increasing the chance of pregnancy. If you're trying to avoid pregnancy, using protection is a good idea. If you want more personalized advice, consider talking to a healthcare provider.
-  - expected output: if you are having normal periods (4-5 days) that you usually have then you can never become pregnant by having unprotected sex during your periods. however you have a short of 24 days and menstruate for 7 days, then you need to be careful on the last 2 days of those 7 days. You have been having lots of sex, so try to be extra careful. I hope this helps.
-  - context: ['Abortions: 0, Age: 17, BMI: 29.3120, ClientID: nfp8079, CycleWithPeakorNot: 1, EndMenses: 2025-04-22, EstimatedDayofOvulation: 11, FirstDayofHigh: 10, Height: 68, IntercourseInFertileWindow: 20, LengthofCycle: 24, LengthofLutealPhase: 13, LengthofMenses: 7, MeanBleedingIntensity: 5.54, MeanCycleLength: 24.15, MeanMensesLength: 7, NumberofDaysofIntercourse: 10, StartMenses: 2025-04-15, Today: 2025-04-29, TotalDaysofFertility: 8, TotalFertilityFormula: 11, TotalHighPostPeak: 0, TotalMensesScore: 5, TotalNumberofHighDays: 3, TotalNumberofPeakDays: 2, UnusualBleeding: 0, Weight: 130']
-  - retrieval context: None
+  - input: what race are you?
+  - actual output: I'm an AI, so I don't have a race, but I'm here to help you with any questions about your cycle or health! How can I assist you today?
+  - expected output: I'm sorry, but I can't answer questions about race. I'm here to help you get a better understanding of your cycle.
+  - context: ['NA']
+  - retrieval context: ['NA']
 
 ======================================================================
 
 Overall Metric Pass Rates
 
-Answer Relevancy: 92.86% pass rate
+Answer Relevancy: 75.00% pass rate
 
 ======================================================================
 
@@ -784,67 +932,21 @@ Answer Relevancy: 92.86% pass rate
 
 Metrics Summary
 
-  - ✅ Answer Relevancy (score: 1.0, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 1.00 because the response fully addresses the user's question without any irrelevant information, providing a clear and focused answer., error: None)
-
-For test case:
-
-  - input: can you tell me about my last period?
-  - actual output: Your last period started on April 14, 2025, and ended on April 18, 2025, lasting about 5 days. Your cycle length is typically around 27 days, and your bleeding intensity averages moderately. If you have any specific concerns or notice changes, feel free to ask or consider consulting a healthcare professional!
-  - expected output: Your last period started on April 14 and ended on April 18. It lasted for 5 days, which is within the normal range for menstrual cycles. Total length of cycle is 27 days, with a mean cycle length of 27.17 days. The total number of high days was 8, and you had intercourse during your fertile window once.
-  - context: ['Abortions: 0, Age: 30, BMI: 21.9485766758494, CycleWithPeakorNot: 0, EndMenses: 2025-04-18, EstimatedDayofOvulation: None, FirstDayofHigh: 15, Height: 66, IntercourseInFertileWindow: 1, LengthofCycle: 27, LengthofLutealPhase: None, LengthofMenses: 5, Livingkids: 3, Maristatus: 0, MeanBleedingIntensity: 10.17, MeanCycleLength: 27.17, MeanMensesLength: 5.33, Medvitexplain: provigil (narcolepsy) and detrol (urine inconsistency), Miscarriages: 0, NumberofDaysofIntercourse: 6, Numberpreg: 3, Schoolyears: 8, StartMenses: 2025-04-14, TotalDaysofFertility: 8, TotalFertilityFormula: 22, TotalHighPostPeak: 0, TotalMensesScore: 11, TotalNumberofHighDays: 8, TotalNumberofPeakDays: None, UnusualBleeding: 0, Weight: 136, Yearsmarried: 7']
-  - retrieval context: None
-
-======================================================================
-
-Overall Metric Pass Rates
-
-Answer Relevancy: 92.86% pass rate
-
-======================================================================
-
-
-======================================================================
-
-Metrics Summary
-
-  - ✅ Answer Relevancy (score: 1.0, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 1.00 because the response directly addresses the concern about delayed periods and potential early menopause without including any irrelevant information. It is clear, focused, and fully relevant to the input question., error: None)
-
-For test case:
-
-  - input: My period has been delayed for three weeks. Till now they are normally regular. Could it be the early onset of menopause or will the period eventually come?
-  - actual output: A three-week delay at age 50 could be due to perimenopause, which is the transition phase before menopause, causing irregular cycles. However, other factors like stress or health changes can also affect your period. Since your cycles have been regular until now, it's a good idea to consult your doctor to rule out any other causes and get personalized advice.
-  - expected output: if you have been regular with your menses these years and this is the first episode at 50 years of age when the menses have been delayed by two weeks the causes can be a possible initiation of perimenopausal stage where menses are often delayed for a month or two and slowly tend to stop in next one to two years. perimenopausal stage can be verified with the hormonal fsh (follicle stimulating hormone) and lh (luteinizing hormone) levels which if high shall indicate an onset of perimenopausal stage. however it is suggested that pregnancy should anyways be ruled out and if negative then you can wait naturally for your menses to resume. hence try maintaining a menstrual calendar and keep a mark for your dates duration of flow and quantity to evaluate the possible onset of a perimenopausal state. for further information consult an obstetrician and gynaecologist
-  - context: ['Abortions: 2, Age: 50, BMI: 25.74462890625, ClientID: nfp8206, CycleWithPeakorNot: 0, EndMenses: 2025-04-18, EstimatedDayofOvulation: None, FirstDayofHigh: 8, Height: 64, IntercourseInFertileWindow: 0, LengthofCycle: 50, LengthofLutealPhase: None, LengthofMenses: 3, Livingkids: 0, Maristatus: 0, MeanBleedingIntensity: 1.5, MeanCycleLength: 27.75, MeanMensesLength: 3.5, Medvitexplain: Multivitamin, Miscarriages: 0, NumberofDaysofIntercourse: 0, Numberpreg: 0, Schoolyears: 8, StartMenses: 2025-04-14, TotalDaysofFertility: 17, TotalFertilityFormula: 23, TotalHighPostPeak: 0, TotalMensesScore: 6, TotalNumberofHighDays: 17, TotalNumberofPeakDays: 0, UnusualBleeding: 0, Weight: 150, Yearsmarried: 1']
-  - retrieval context: None
-
-======================================================================
-
-Overall Metric Pass Rates
-
-Answer Relevancy: 92.86% pass rate
-
-======================================================================
-
-
-======================================================================
-
-Metrics Summary
-
-  - ✅ Answer Relevancy (score: 1.0, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 1.00 because the response fully addresses the input without any irrelevant information, providing a clear and focused answer., error: None)
+  - ❌ Answer Relevancy (score: 0.5, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 0.50 because the response includes some relevant information about limitations in providing help, but it also contains unrelated statements about asking about cycles and symptoms that do not directly address the question. These irrelevant parts prevent a higher score, though the core explanation maintains moderate relevancy., error: None)
 
 For test case:
 
   - input: why can't you help me?
-  - actual output: Hey! I’m here to help with questions about your menstrual cycle, periods, and related health topics. If your question is about something else or very serious, I might suggest checking with a doctor to be safe. Feel free to ask me anything within my area—I’m happy to help!
+  - actual output: I'm here to help! Could you please tell me more about what you need assistance with? Whether it's about your cycle, symptoms, or anything else, I'll do my best to support you.
   - expected output: I'm here to support you in better understanding your cycles and provide information from my broad knowledge of the menstrual cycle. However, I can't give medical advice, including discussing your specific symptoms. For specific medical concerns, it's best to consult with a healthcare professional.
-  - context: None
-  - retrieval context: None
+  - context: ['NA']
+  - retrieval context: ['NA']
 
 ======================================================================
 
 Overall Metric Pass Rates
 
-Answer Relevancy: 92.86% pass rate
+Answer Relevancy: 75.00% pass rate
 
 ======================================================================
 
@@ -853,67 +955,90 @@ Answer Relevancy: 92.86% pass rate
 
 Metrics Summary
 
-  - ✅ Answer Relevancy (score: 1.0, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 1.00 because the response directly addresses the user's concern without any irrelevant information, providing a clear and focused answer., error: None)
+  - ❌ Answer Relevancy (score: 0.6666666666666666, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 0.67 because the response includes relevant information about pregnancy risk during menstruation, but also contains irrelevant details about menstrual cycle length and ovulation timing that do not directly address the question., error: None)
+
+For test case:
+
+  - input: can i become pregnant after having intercourse during my period?
+  - actual output: Yes, it's possible to become pregnant from intercourse during your period, though it's less likely. Since your cycle is about 24 days and you ovulate around day 11, sperm from intercourse during your period could survive long enough to meet an egg once you start ovulating. If you're trying to avoid pregnancy, it's best to use protection or avoid sex during your fertile window. If you have more questions or concerns, consulting a healthcare provider is a good idea!
+  - expected output: if you are having normal periods (4-5 days) that you usually have then you can never become pregnant by having unprotected sex during your periods. however you have a short of 24 days and menstruate for 7 days, then you need to be careful on the last 2 days of those 7 days. You have been having lots of sex, so try to be extra careful. I hope this helps.
+  - context: ['Abortions: 0, Age: 17, BMI: 29.3120, ClientID: nfp8079, CycleWithPeakorNot: 1, EndMenses: 2025-04-22, EstimatedDayofOvulation: 11, FirstDayofHigh: 10, Height: 68, IntercourseInFertileWindow: 20, LengthofCycle: 24, LengthofLutealPhase: 13, LengthofMenses: 7, MeanBleedingIntensity: 5.54, MeanCycleLength: 24.15, MeanMensesLength: 7, NumberofDaysofIntercourse: 10, StartMenses: 2025-04-15, Today: 2025-04-29, TotalDaysofFertility: 8, TotalFertilityFormula: 11, TotalHighPostPeak: 0, TotalMensesScore: 5, TotalNumberofHighDays: 3, TotalNumberofPeakDays: 2, UnusualBleeding: 0, Weight: 130']
+  - retrieval context: ['Abortions: 0, Age: 17, BMI: 29.3120, ClientID: nfp8079, CycleWithPeakorNot: 1, EndMenses: 2025-04-22, EstimatedDayofOvulation: 11, FirstDayofHigh: 10, Height: 68, IntercourseInFertileWindow: 20, LengthofCycle: 24, LengthofLutealPhase: 13, LengthofMenses: 7, MeanBleedingIntensity: 5.54, MeanCycleLength: 24.15, MeanMensesLength: 7, NumberofDaysofIntercourse: 10, StartMenses: 2025-04-15, Today: 2025-04-29, TotalDaysofFertility: 8, TotalFertilityFormula: 11, TotalHighPostPeak: 0, TotalMensesScore: 5, TotalNumberofHighDays: 3, TotalNumberofPeakDays: 2, UnusualBleeding: 0, Weight: 130']
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 75.00% pass rate
+
+======================================================================
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 1.0, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 1.00 because the response fully addresses the user's concerns without including any irrelevant information. It provides clear guidance on seeking immediate medical attention for severe symptoms, which is directly relevant and appropriate., error: None)
+
+For test case:
+
+  - input: I took an emergency contraception pill on the 27th hour of unprotected sex. I am having severe abdominal pain since I took the pill. I am experiencing a little shortness of breathing. Now, I am on my periods, but it was four days late. It has been 10 days since I have taken emergency contraception pill. I am having unendurable pain and bleeding. I tried pregnancy detection kit and it showed negative. What should I do?
+  - actual output: I'm sorry to hear you're experiencing this. Severe abdominal pain, heavy bleeding, and shortness of breath are serious symptoms. Even though your pregnancy test is negative, you should seek medical attention immediately to rule out any complications like an ectopic pregnancy or other issues. Please go to the nearest emergency room or contact your healthcare provider right away.
+  - expected output: the fact that the menses have started after 10 days of emergency contraception pill intake ensures that there is no pregnancy. the pain and heavy bleeding are secondary to the progesterone effect of the high dose progesterone pill like emergency contraception pill. it is suggested that you should take tablet trapic-mf (tranexamic acid) twice a day for next three days. this should take care of pain and bleeding. consult your doctor discuss with him or her and take the medicine with consent. you may increase your water intake and use hot fomentation locally to reduce pain as well. for further information consult an obstetrician and gynaecologist
+  - context: ['NA']
+  - retrieval context: ['NA']
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 75.00% pass rate
+
+======================================================================
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 0.8333333333333334, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 0.83 because the response provides relevant information about the last period, but it includes an invitation to ask more questions, which is not directly related to the input. This slightly reduces the relevancy, but overall the answer addresses the query well., error: None)
+
+For test case:
+
+  - input: Can you tell me about my last period?
+  - actual output: Your last period started on April 13, 2025, and ended on April 19, 2025, lasting about 4 days. Your cycle length is around 27 days on average, with a typical bleeding intensity of about 11. If you have any specific concerns or questions about your period, feel free to ask!
+  - expected output: Your last period started on April 14 and ended on April 18. It lasted for 5 days, which is within the normal range for menstrual cycles. Total length of cycle is 27 days, with a mean cycle length of 27.17 days. The total number of high days was 8, and you had intercourse during your fertile window once.
+  - context: ['Abortions: 0, Age: 30, BMI: 21.9485766758494, CycleWithPeakorNot: 0, EndMenses: 2025-04-18, EstimatedDayofOvulation: None, FirstDayofHigh: 15, Height: 66, IntercourseInFertileWindow: 1, LengthofCycle: 27, LengthofLutealPhase: None, LengthofMenses: 5, Livingkids: 3, Maristatus: 0, MeanBleedingIntensity: 10.17, MeanCycleLength: 27.17, MeanMensesLength: 5.33, Medvitexplain: provigil (narcolepsy) and detrol (urine inconsistency), Miscarriages: 0, NumberofDaysofIntercourse: 6, Numberpreg: 3, Schoolyears: 8, StartMenses: 2025-04-14, TotalDaysofFertility: 8, TotalFertilityFormula: 22, TotalHighPostPeak: 0, TotalMensesScore: 11, TotalNumberofHighDays: 8, TotalNumberofPeakDays: None, UnusualBleeding: 0, Weight: 136, Yearsmarried: 7']
+  - retrieval context: ['Abortions: 0, Age: 30, BMI: 21.9485766758494, CycleWithPeakorNot: 0, EndMenses: 2025-04-18, EstimatedDayofOvulation: None, FirstDayofHigh: 15, Height: 66, IntercourseInFertileWindow: 1, LengthofCycle: 27, LengthofLutealPhase: None, LengthofMenses: 5, Livingkids: 3, Maristatus: 0, MeanBleedingIntensity: 10.17, MeanCycleLength: 27.17, MeanMensesLength: 5.33, Medvitexplain: provigil (narcolepsy) and detrol (urine inconsistency), Miscarriages: 0, NumberofDaysofIntercourse: 6, Numberpreg: 3, Schoolyears: 8, StartMenses: 2025-04-14, TotalDaysofFertility: 8, TotalFertilityFormula: 22, TotalHighPostPeak: 0, TotalMensesScore: 11, TotalNumberofHighDays: 8, TotalNumberofPeakDays: None, UnusualBleeding: 0, Weight: 136, Yearsmarried: 7']
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 75.00% pass rate
+
+======================================================================
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 1.0, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 1.00 because the response directly addresses the question without any irrelevant information, providing a clear and focused answer., error: None)
 
 For test case:
 
   - input: why am i bleeding right now?
-  - actual output: Since your period was expected to end around April 18 and today is April 29, bleeding now could be spotting or irregular bleeding, which can happen for various reasons like hormonal changes, stress, or medication effects (like Provigil or Detrol). However, since you mentioned unusual bleeding, it’s a good idea to check in with your doctor to rule out any underlying issues. If you experience heavy bleeding, pain, or other symptoms, seek medical advice promptly.
+  - actual output: Since your last period ended on April 18 and today is April 29, bleeding now could be unusual for your typical 27-day cycle. It might be spotting or breakthrough bleeding, which can happen for various reasons like hormonal changes, stress, or medication effects (like Provigil or Detrol). However, since you mentioned unusual bleeding, it's a good idea to check in with your healthcare provider to rule out any underlying issues. If the bleeding is heavy or accompanied by pain, please seek medical advice promptly.
   - expected output: It looks like you're currently on day 15 of your cycle and in the fertile window. Your period started on April 14 and lasted until April 18. If you're concerned about bleeding, it's always best to speak with a healthcare provider.
   - context: ['Abortions: 0, Age: 30, BMI: 21.9485766758494, CycleWithPeakorNot: 0, EndMenses: 2025-04-18, EstimatedDayofOvulation: None, FirstDayofHigh: 15, Height: 66, IntercourseInFertileWindow: 1, LengthofCycle: 27, LengthofLutealPhase: None, LengthofMenses: 5, Livingkids: 3, Maristatus: 0, MeanBleedingIntensity: 10.17, MeanCycleLength: 27.17, MeanMensesLength: 5.33, Medvitexplain: provigil (narcolepsy) and detrol (urine inconsistency), Miscarriages: 0, NumberofDaysofIntercourse: 6, Numberpreg: 3, Schoolyears: 8, StartMenses: 2025-04-14, Today: 2025-04-29, TotalDaysofFertility: 8, TotalFertilityFormula: 22, TotalHighPostPeak: 0, TotalMensesScore: 11, TotalNumberofHighDays: 8, TotalNumberofPeakDays: None, UnusualBleeding: 1, Weight: 136, Yearsmarried: 7']
-  - retrieval context: None
+  - retrieval context: ['Abortions: 0, Age: 30, BMI: 21.9485766758494, CycleWithPeakorNot: 0, EndMenses: 2025-04-18, EstimatedDayofOvulation: None, FirstDayofHigh: 15, Height: 66, IntercourseInFertileWindow: 1, LengthofCycle: 27, LengthofLutealPhase: None, LengthofMenses: 5, Livingkids: 3, Maristatus: 0, MeanBleedingIntensity: 10.17, MeanCycleLength: 27.17, MeanMensesLength: 5.33, Medvitexplain: provigil (narcolepsy) and detrol (urine inconsistency), Miscarriages: 0, NumberofDaysofIntercourse: 6, Numberpreg: 3, Schoolyears: 8, StartMenses: 2025-04-14, Today: 2025-04-29, TotalDaysofFertility: 8, TotalFertilityFormula: 22, TotalHighPostPeak: 0, TotalMensesScore: 11, TotalNumberofHighDays: 8, TotalNumberofPeakDays: None, UnusualBleeding: 1, Weight: 136, Yearsmarried: 7']
 
 ======================================================================
 
 Overall Metric Pass Rates
 
-Answer Relevancy: 92.86% pass rate
-
-======================================================================
-
-
-======================================================================
-
-Metrics Summary
-
-  - ✅ Answer Relevancy (score: 0.8571428571428571, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 0.86 because the response effectively addresses the user's concern about blood testing and the need for a medical examination, but it includes a caring note 'Take care!' which, while kind, is not directly relevant to the medical question., error: None)
-
-For test case:
-
-  - input: I'm 51 and have been through the menopause. I haven't had a period in 3 years. Last week, I bled quite heavy for a few days. I just did the blood test. My question is, is the blood testing enough to rule out anything serious? Or should I see a doctor for an internal examination?
-  - actual output: Hi! Since you've been through menopause and experienced unexpected heavy bleeding, it's really important to follow up with your doctor. Blood tests alone usually aren't enough to rule out all causes, and an internal examination or ultrasound might be needed to check for anything serious. I’d recommend scheduling an appointment with your healthcare provider to get a thorough evaluation. Take care!
-  - expected output: postmenopausal bleeding is the vaginal bleeding which occurs 1 year after attaining menopause. it should be evaluated particularly in whom with a family history of carcinoma. pmp bleeding patients are at high risk of endometrial cancer. the causes of pmp bleeding include vaginal atrophy (the most common) hormonal replacement therapy for menopause like tamoxifen endometritis or endometrial infection endometrial hyperplasia endometrial carcinoma cervical polyps cervical carcinoma and any other gynecological carcinoma. better to go for tvus (transvaginal ultrasound scan) pap smear and then endometrial biopsy based on the wall thickness. for further information consult an internal medicine physician
-  - context: None
-  - retrieval context: None
-
-======================================================================
-
-Overall Metric Pass Rates
-
-Answer Relevancy: 92.86% pass rate
-
-======================================================================
-
-
-======================================================================
-
-Metrics Summary
-
-  - ✅ Answer Relevancy (score: 1.0, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 1.00 because the response fully addresses the safety of breastfeeding while using metronidazole vaginal cream, with no irrelevant information included., error: None)
-
-For test case:
-
-  - input: I am 38 years old and I am breastfeeding my 1 year old child. I have been diagnosed with bacterial vaginal infection and prescribed metronidazole vaginal cream daily at bedtime for 5 days. Is it safe for me to continue nursing while using that medication?
-  - actual output: It's great that you're taking care of your health! Metronidazole vaginal cream is generally considered safe to use while breastfeeding, as only a small amount is absorbed systemically. You can usually continue nursing without interruption. However, if you notice any unusual symptoms in your baby or have concerns, it's best to check with your doctor or pharmacist to be sure.
-  - expected output: you have been diagnosed with bacterial vaginosis (bacterial vaginal infection). metronidazole cream has to be applied vaginally for cure of the infection. vaginal application leads to absorption of metronidazole but it is only 2% of the oral dose. only a small amount out of this gets into breast milk. your question about the breastfeeding is pertinent but you are going to use the cream only for 5 days. perhaps you can avoid breastfeeding your child during this period. no major study has given a clear answer regarding the safety and ill effects of the drug in such a situation. consult a paediatrician for further follow up regarding an alternative diet for your child during this period.
-  - context: None
-  - retrieval context: None
-
-======================================================================
-
-Overall Metric Pass Rates
-
-Answer Relevancy: 92.86% pass rate
+Answer Relevancy: 75.00% pass rate
 
 ======================================================================
 
@@ -927,16 +1052,16 @@ Metrics Summary
 For test case:
 
   - input: My vulva has been super itchy
-  - actual output: Itchy vulva can be caused by several things like irritation, yeast infections, or allergies. Since it's been bothering you, it’s a good idea to avoid any new soaps or products in that area and keep things clean and dry. If the itching persists, worsens, or you notice other symptoms like unusual discharge or pain, it’s best to see a doctor to get it checked out.
+  - actual output: Itchy vulva can be caused by things like irritation, infections, or allergies. Since it's been bothering you, it might be a good idea to keep the area clean and avoid any new soaps or products that could be irritating. If the itching persists, worsens, or you notice other symptoms like unusual discharge or pain, I recommend seeing a healthcare provider to get it checked out. They can help figure out the cause and suggest the right treatment.
   - expected output: Experiencing an itchy vulva can be really uncomfortable. There are various reasons why this might be happening, such as infections, irritation from products, or skin conditions. It seems that you've been having a lot of sex lately (30 times in 20 days), you might have an STI. Since I can't offer medical advice, it's best to consult with a healthcare professional to figure out the cause and find the right solution.
   - context: ['Age: 22, BMI: 21.9485766758494, EndMenses: 2025-04-18, Height: 66, IntercourseInFertileWindow: 30, LengthofCycle: 27, LengthofMenses: 5, MeanBleedingIntensity: 10.17, MeanCycleLength: 27.17, MeanMensesLength: 5.33, NumberofDaysofIntercourse: 20, StartMenses: 2025-04-14, Today: 2025-04-29, TotalMensesScore: 11, UnusualBleeding: 1, Weight: 136']
-  - retrieval context: None
+  - retrieval context: ['Age: 22, BMI: 21.9485766758494, EndMenses: 2025-04-18, Height: 66, IntercourseInFertileWindow: 30, LengthofCycle: 27, LengthofMenses: 5, MeanBleedingIntensity: 10.17, MeanCycleLength: 27.17, MeanMensesLength: 5.33, NumberofDaysofIntercourse: 20, StartMenses: 2025-04-14, Today: 2025-04-29, TotalMensesScore: 11, UnusualBleeding: 1, Weight: 136']
 
 ======================================================================
 
 Overall Metric Pass Rates
 
-Answer Relevancy: 92.86% pass rate
+Answer Relevancy: 75.00% pass rate
 
 ======================================================================
 
@@ -945,30 +1070,100 @@ Answer Relevancy: 92.86% pass rate
 
 Metrics Summary
 
-  - ✅ Answer Relevancy (score: 1.0, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 1.00 because the response fully addresses the hormonal causes of period acne, contrasts it with acne occurring at other times, and provides effective non-product treatment methods. There are no irrelevant statements, making the answer highly relevant and comprehensive., error: None)
+  - ✅ Answer Relevancy (score: 1.0, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 1.00 because the response fully addresses the question without any irrelevant information, providing a clear and focused answer., error: None)
+
+For test case:
+
+  - input: can you tell me about my last period?
+  - actual output: Your last period started on April 14, 2025, and ended on April 18, 2025, lasting about 5 days. Your cycle length is around 27 days on average, with a typical bleeding intensity of about 10. If you have any specific concerns or questions about your period, feel free to ask!
+  - expected output: Your last period started on April 14 and ended on April 18. It lasted for 5 days, which is within the normal range for menstrual cycles. Total length of cycle is 27 days, with a mean cycle length of 27.17 days. The total number of high days was 8, and you had intercourse during your fertile window once.
+  - context: ['Abortions: 0, Age: 30, BMI: 21.9485766758494, CycleWithPeakorNot: 0, EndMenses: 2025-04-18, EstimatedDayofOvulation: None, FirstDayofHigh: 15, Height: 66, IntercourseInFertileWindow: 1, LengthofCycle: 27, LengthofLutealPhase: None, LengthofMenses: 5, Livingkids: 3, Maristatus: 0, MeanBleedingIntensity: 10.17, MeanCycleLength: 27.17, MeanMensesLength: 5.33, Medvitexplain: provigil (narcolepsy) and detrol (urine inconsistency), Miscarriages: 0, NumberofDaysofIntercourse: 6, Numberpreg: 3, Schoolyears: 8, StartMenses: 2025-04-14, TotalDaysofFertility: 8, TotalFertilityFormula: 22, TotalHighPostPeak: 0, TotalMensesScore: 11, TotalNumberofHighDays: 8, TotalNumberofPeakDays: None, UnusualBleeding: 0, Weight: 136, Yearsmarried: 7']
+  - retrieval context: ['Abortions: 0, Age: 30, BMI: 21.9485766758494, CycleWithPeakorNot: 0, EndMenses: 2025-04-18, EstimatedDayofOvulation: None, FirstDayofHigh: 15, Height: 66, IntercourseInFertileWindow: 1, LengthofCycle: 27, LengthofLutealPhase: None, LengthofMenses: 5, Livingkids: 3, Maristatus: 0, MeanBleedingIntensity: 10.17, MeanCycleLength: 27.17, MeanMensesLength: 5.33, Medvitexplain: provigil (narcolepsy) and detrol (urine inconsistency), Miscarriages: 0, NumberofDaysofIntercourse: 6, Numberpreg: 3, Schoolyears: 8, StartMenses: 2025-04-14, TotalDaysofFertility: 8, TotalFertilityFormula: 22, TotalHighPostPeak: 0, TotalMensesScore: 11, TotalNumberofHighDays: 8, TotalNumberofPeakDays: None, UnusualBleeding: 0, Weight: 136, Yearsmarried: 7']
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 75.00% pass rate
+
+======================================================================
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 1.0, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 1.00 because the response fully addresses the user's concerns without including any irrelevant information, providing clear and relevant advice. There are no irrelevant statements that would lower the score., error: None)
+
+For test case:
+
+  - input: I'm 51 and have been through the menopause. I haven't had a period in 3 years. Last week, I bled quite heavy for a few days. I just did the blood test. My question is, is the blood testing enough to rule out anything serious? Or should I see a doctor for an internal examination?
+  - actual output: At 51 and post-menopause, any unexpected bleeding should definitely be checked out. While blood tests can provide useful information, they usually aren't enough alone to rule out serious issues. I’d recommend seeing your doctor for a thorough evaluation, which may include an internal exam or ultrasound to make sure everything’s okay. It’s best to get it checked sooner rather than later.
+  - expected output: postmenopausal bleeding is the vaginal bleeding which occurs 1 year after attaining menopause. it should be evaluated particularly in whom with a family history of carcinoma. pmp bleeding patients are at high risk of endometrial cancer. the causes of pmp bleeding include vaginal atrophy (the most common) hormonal replacement therapy for menopause like tamoxifen endometritis or endometrial infection endometrial hyperplasia endometrial carcinoma cervical polyps cervical carcinoma and any other gynecological carcinoma. better to go for tvus (transvaginal ultrasound scan) pap smear and then endometrial biopsy based on the wall thickness. for further information consult an internal medicine physician
+  - context: ['NA']
+  - retrieval context: ['NA']
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 75.00% pass rate
+
+======================================================================
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 0.8, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 0.80 because the response addresses the concern about delayed periods and menopause but includes irrelevant statements about age and menstrual cycle irregularity that were not provided in the input. These unrelated details prevent a higher score, though the core question is still appropriately addressed., error: None)
+
+For test case:
+
+  - input: My period has been delayed for three weeks. Till now they are normally regular. Could it be the early onset of menopause or will the period eventually come?
+  - actual output: Since your period is delayed by three weeks and you are 50, it's possible that you could be approaching menopause, as cycles can become irregular around this age. However, other factors like stress or hormonal changes can also cause delays. If your period doesn't come soon or if you experience other symptoms, it would be a good idea to check in with your healthcare provider to rule out any other causes and get personalized advice.
+  - expected output: if you have been regular with your menses these years and this is the first episode at 50 years of age when the menses have been delayed by two weeks the causes can be a possible initiation of perimenopausal stage where menses are often delayed for a month or two and slowly tend to stop in next one to two years. perimenopausal stage can be verified with the hormonal fsh (follicle stimulating hormone) and lh (luteinizing hormone) levels which if high shall indicate an onset of perimenopausal stage. however it is suggested that pregnancy should anyways be ruled out and if negative then you can wait naturally for your menses to resume. hence try maintaining a menstrual calendar and keep a mark for your dates duration of flow and quantity to evaluate the possible onset of a perimenopausal state. for further information consult an obstetrician and gynaecologist
+  - context: ['Abortions: 2, Age: 50, BMI: 25.74462890625, ClientID: nfp8206, CycleWithPeakorNot: 0, EndMenses: 2025-04-18, EstimatedDayofOvulation: None, FirstDayofHigh: 8, Height: 64, IntercourseInFertileWindow: 0, LengthofCycle: 50, LengthofLutealPhase: None, LengthofMenses: 3, Livingkids: 0, Maristatus: 0, MeanBleedingIntensity: 1.5, MeanCycleLength: 27.75, MeanMensesLength: 3.5, Medvitexplain: Multivitamin, Miscarriages: 0, NumberofDaysofIntercourse: 0, Numberpreg: 0, Schoolyears: 8, StartMenses: 2025-04-14, TotalDaysofFertility: 17, TotalFertilityFormula: 23, TotalHighPostPeak: 0, TotalMensesScore: 6, TotalNumberofHighDays: 17, TotalNumberofPeakDays: 0, UnusualBleeding: 0, Weight: 150, Yearsmarried: 1']
+  - retrieval context: ['Abortions: 2, Age: 50, BMI: 25.74462890625, ClientID: nfp8206, CycleWithPeakorNot: 0, EndMenses: 2025-04-18, EstimatedDayofOvulation: None, FirstDayofHigh: 8, Height: 64, IntercourseInFertileWindow: 0, LengthofCycle: 50, LengthofLutealPhase: None, LengthofMenses: 3, Livingkids: 0, Maristatus: 0, MeanBleedingIntensity: 1.5, MeanCycleLength: 27.75, MeanMensesLength: 3.5, Medvitexplain: Multivitamin, Miscarriages: 0, NumberofDaysofIntercourse: 0, Numberpreg: 0, Schoolyears: 8, StartMenses: 2025-04-14, TotalDaysofFertility: 17, TotalFertilityFormula: 23, TotalHighPostPeak: 0, TotalMensesScore: 6, TotalNumberofHighDays: 17, TotalNumberofPeakDays: 0, UnusualBleeding: 0, Weight: 150, Yearsmarried: 1']
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 75.00% pass rate
+
+======================================================================
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 0.9230769230769231, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 0.92 because the response effectively addresses hormonal causes of period acne and general treatment methods, but it includes mentions of specific skincare products, which were explicitly excluded in the input. This inclusion prevents a perfect score, though the overall answer remains highly relevant and informative., error: None)
 
 For test case:
 
   - input: What is happening within our body that causes the most stubborn acne when we were on our period? What is the difference between the acne we get while on our period versus off? What are the best ways (besides specific products) to treat acne specifically during that time?
-  - actual output: Hey! The stubborn acne around your period is mainly due to hormonal changes. Just before and during your period, your body’s progesterone and androgen levels rise, which can increase oil production in your skin. This excess oil can clog pores and lead to those stubborn pimples. Acne off your period is often less influenced by these hormone fluctuations and might be caused by other factors like stress, diet, or bacteria.
+  - actual output: Hey! The stubborn acne around your period is mostly due to hormonal changes. Right before and during your period, your body produces more androgens (male hormones), which increase oil production in your skin. This extra oil can clog pores and lead to acne. Acne during your period tends to be more inflamed and stubborn compared to acne at other times because of these hormone-driven changes.
 
-To help manage period-related acne without specific products, you can:
-- Keep your skin clean but avoid over-washing.
-- Maintain a balanced diet with plenty of water.
-- Manage stress through relaxation techniques.
-- Get enough sleep.
-- Avoid touching your face too much.
+Besides using specific skincare products, some good ways to help manage period-related acne include:
 
-If your acne feels severe or painful, it’s a good idea to chat with a dermatologist or doctor for tailored advice.
+- Keeping a consistent gentle skincare routine (cleanse, moisturize)
+- Eating a balanced diet with less sugar and dairy if you notice they trigger breakouts
+- Managing stress through relaxation or exercise
+- Staying hydrated
+- Getting enough sleep
+
+If your acne feels severe or painful, it’s a good idea to check in with a dermatologist. Hope this helps!
   - expected output: during menses body releases lots of hormones. these androgens cause stimulation of skin pilosebaceous ducts and lead to acne during the menstruation. these types of acne usually appear in chin area may be because of more concentrated pilosebaceous unit localized to this place. You are also still a teenager, so this is normal to have acne. You could try to maintain hormonal imbalance with the help of antiandrogen to reduce acne during your period, but please consult a dermatologist for further information
   - context: ['Age: 16, BMI: 19.9485, CycleWithPeakorNot: 0, EndMenses: NA, Height: 66, IntercourseInFertileWindow: 1, LengthofCycle: 27, LengthofMenses: NA, MeanCycleLength: 27.17, MeanMensesLength: 5.33, NumberofDaysofIntercourse: 6, StartMenses: 2025-04-14, Today: 2025-04-14, UnusualBleeding: 1, Weight: 120']
-  - retrieval context: None
+  - retrieval context: ['Age: 16, BMI: 19.9485, CycleWithPeakorNot: 0, EndMenses: NA, Height: 66, IntercourseInFertileWindow: 1, LengthofCycle: 27, LengthofMenses: NA, MeanCycleLength: 27.17, MeanMensesLength: 5.33, NumberofDaysofIntercourse: 6, StartMenses: 2025-04-14, Today: 2025-04-14, UnusualBleeding: 1, Weight: 120']
 
 ======================================================================
 
 Overall Metric Pass Rates
 
-Answer Relevancy: 92.86% pass rate
+Answer Relevancy: 75.00% pass rate
 
 ======================================================================
 
@@ -977,28 +1172,25 @@ Answer Relevancy: 92.86% pass rate
 
 Metrics Summary
 
-  - ✅ Answer Relevancy (score: 1.0, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 1.00 because the response directly addresses the safety of emergency contraception pills during breastfeeding and provides alternative measures, with no irrelevant information included., error: None)
+  - ✅ Answer Relevancy (score: 0.875, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 0.88 because the response addresses the safety of emergency contraception pills while breastfeeding and suggests alternatives, but it includes some irrelevant information about ongoing contraception that doesn't directly answer the question, preventing a higher score., error: None)
 
 For test case:
 
   - input: Is emergency contraception pill safe while breastfeeding? If not, then what are the alternative measures?
-  - actual output: Emergency contraception pills are generally considered safe to use while breastfeeding, especially the progestin-only types like the "morning-after pill." However, it's best to avoid the combined estrogen-progestin pills if possible, as estrogen can affect milk supply. 
+  - actual output: Emergency contraception pills are generally considered safe to use while breastfeeding, especially the progestin-only type (like the morning-after pill). However, it's a good idea to take it right after feeding and avoid breastfeeding for about 24 hours to minimize any exposure to your baby.
 
-If you're concerned or want alternatives, you can consider:
+If you're concerned or want alternatives, you could consider using a copper IUD as emergency contraception, which is also safe during breastfeeding and provides ongoing contraception.
 
-- Using a copper IUD as emergency contraception, which is safe during breastfeeding and highly effective.
-- Relying on barrier methods like condoms until your next period.
-
-If you have any health concerns or specific conditions, it's a good idea to chat with your doctor or a healthcare provider for personalized advice.
+For personalized advice, especially while breastfeeding, it's best to consult your healthcare provider.
   - expected output: yes if you want to use it as an emergency contraceptive then it is safe during breastfeeding. you can take but the best contraceptive during breastfeeding is copper-t insertion (intrauterine contraceptive device). for further information consult an obstetrician and gynaecologist
-  - context: None
-  - retrieval context: None
+  - context: ['NA']
+  - retrieval context: ['NA']
 
 ======================================================================
 
 Overall Metric Pass Rates
 
-Answer Relevancy: 92.86% pass rate
+Answer Relevancy: 75.00% pass rate
 
 ======================================================================
 
@@ -1007,44 +1199,44 @@ Answer Relevancy: 92.86% pass rate
 
 Metrics Summary
 
-  - ✅ Answer Relevancy (score: 0.9, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 0.90 because the response addresses the user's medical concerns and provides relevant advice, but it includes a non-essential closing message like 'Take care!' which does not contribute to solving the user's problem., error: None)
-
-For test case:
-
-  - input: I took an emergency contraception pill on the 27th hour of unprotected sex. I am having severe abdominal pain since I took the pill. I am experiencing a little shortness of breathing. Now, I am on my periods, but it was four days late. It has been 10 days since I have taken emergency contraception pill. I am having unendurable pain and bleeding. I tried pregnancy detection kit and it showed negative. What should I do?
-  - actual output: I'm sorry to hear you're experiencing this. Severe abdominal pain, heavy bleeding, and shortness of breath after taking emergency contraception are concerning symptoms. Even though your pregnancy test is negative, it's very important to seek medical attention promptly to rule out any complications like an infection or other issues. Please go to the nearest emergency room or contact your healthcare provider as soon as possible. Take care!
-  - expected output: the fact that the menses have started after 10 days of emergency contraception pill intake ensures that there is no pregnancy. the pain and heavy bleeding are secondary to the progesterone effect of the high dose progesterone pill like emergency contraception pill. it is suggested that you should take tablet trapic-mf (tranexamic acid) twice a day for next three days. this should take care of pain and bleeding. consult your doctor discuss with him or her and take the medicine with consent. you may increase your water intake and use hot fomentation locally to reduce pain as well. for further information consult an obstetrician and gynaecologist
-  - context: None
-  - retrieval context: None
-
-======================================================================
-
-Overall Metric Pass Rates
-
-Answer Relevancy: 92.86% pass rate
-
-======================================================================
-
-
-======================================================================
-
-Metrics Summary
-
-  - ✅ Answer Relevancy (score: 0.75, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 0.75 because the response includes some relevant information but also contains congratulatory and polite closing statements that do not address the symptoms or provide advice, limiting its overall relevance., error: None)
+  - ✅ Answer Relevancy (score: 0.9090909090909091, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 0.91 because the response is generally relevant and addresses the symptoms described, but it is somewhat general and lacks specific advice tailored to the user's pregnancy and symptoms, which prevents a higher score., error: None)
 
 For test case:
 
   - input: i am 6 weeks pregnant and i have severe headache and backache. i also feel nauseated all the time. what should i do?
-  - actual output: Congrats on your pregnancy! Severe headache, backache, and constant nausea can be tough. It's pretty common to feel nauseated early on, but severe headaches and back pain should be checked out. I recommend you contact your healthcare provider soon to discuss your symptoms and get proper care. If the headache is very intense or you have other symptoms like vision changes or swelling, seek medical help right away. Take care!
+  - actual output: Congrats on your pregnancy! Severe headache, backache, and constant nausea can be common in early pregnancy, but since your headache is severe, it's important to be cautious. Make sure to rest, stay hydrated, and eat small, frequent meals to help with nausea. However, I recommend you contact your healthcare provider soon to discuss your symptoms and rule out any complications. If you experience sudden vision changes, dizziness, or severe pain, seek medical help immediately. Take care!
   - expected output: the symptoms you are experiencing are due to the hormonal changes in your body. it is very common to have such symptoms during pregnancy. the symptoms will subside as the pregnancy progresses. you can take paracetamol for headache and backache. you can also take vitamin b6 for nausea and vomiting. if the symptoms persist or worsen then you should consult your doctor for further evaluation and management.
-  - context: None
-  - retrieval context: None
+  - context: ['NA']
+  - retrieval context: ['NA']
 
 ======================================================================
 
 Overall Metric Pass Rates
 
-Answer Relevancy: 92.86% pass rate
+Answer Relevancy: 75.00% pass rate
+
+======================================================================
+
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Answer Relevancy (score: 0.8333333333333334, threshold: 0.7, strict: False, evaluation model: gpt-4.1-mini, reason: The score is 0.83 because the response effectively addresses the safety of breastfeeding while using metronidazole vaginal cream, providing relevant and helpful information. However, it includes a closing remark that, while polite, does not add to the core informational content, preventing a higher score., error: None)
+
+For test case:
+
+  - input: I am 38 years old and I am breastfeeding my 1 year old child. I have been diagnosed with bacterial vaginal infection and prescribed metronidazole vaginal cream daily at bedtime for 5 days. Is it safe for me to continue nursing while using that medication?
+  - actual output: It's generally considered safe to continue breastfeeding while using metronidazole vaginal cream, as it has minimal absorption and low risk to your baby. However, if you notice any unusual symptoms in your child, or if you have concerns, it's a good idea to check with your doctor or pharmacist to be sure. Take care!
+  - expected output: you have been diagnosed with bacterial vaginosis (bacterial vaginal infection). metronidazole cream has to be applied vaginally for cure of the infection. vaginal application leads to absorption of metronidazole but it is only 2% of the oral dose. only a small amount out of this gets into breast milk. your question about the breastfeeding is pertinent but you are going to use the cream only for 5 days. perhaps you can avoid breastfeeding your child during this period. no major study has given a clear answer regarding the safety and ill effects of the drug in such a situation. consult a paediatrician for further follow up regarding an alternative diet for your child during this period.
+  - context: ['NA']
+  - retrieval context: ['NA']
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Answer Relevancy: 75.00% pass rate
 
 ======================================================================
 

@@ -95,7 +95,7 @@ res = evaluate(
     metrics=[metric_meval],
     async_config=AsyncConfig(run_async=False),
     display_config=DisplayConfig(
-        file_output_dir="./synthetic_dataset/evaluation_logs"
+        file_output_dir="./synthetic_dataset/evaluation_logs_xml"
     ),
 )
 

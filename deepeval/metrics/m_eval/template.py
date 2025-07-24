@@ -6,18 +6,22 @@ class MEvalTemplate:
     @staticmethod
     def generate_evaluation_steps(parameters: str, criteria: str):
         steps = textwrap.dedent(f"""\
-            Given an evaluation criteria which outlines how you should judge the {parameters}, generate 3-4 concise evaluation steps based on the criteria below. You MUST make it clear how to evaluate {parameters} in relation to one another.
+            <instructions>
+            Given evaluation criteria which outlines how you should judge the {parameters}, generate 3-4 concise evaluation steps based on the criteria below.
+            You MUST make it clear how to evaluate {parameters} in relation to one another.
 
-            Evaluation Criteria:
+            <evaluation_criteria>
             {criteria}
+            </evaluation_criteria>
 
-            **
             IMPORTANT: Please make sure to only return in JSON format, with the "steps" key as a list of strings. No words or explanation is needed.
-            Example JSON:
+            
+            <output_example>
             {{
                 "steps": <list_of_strings>
             }}
-            **
+            </output_example>
+            </instructions>
 
             JSON:
             """
@@ -53,8 +57,9 @@ class MEvalTemplate:
             else ""
         )
 
-        return textwrap.dedent(
-            f"""You are an evaluator. Given the following {dependencies}, assess the response below and return a JSON object with two fields:
+        return textwrap.dedent(f"""\
+            <instructions>
+            You are an evaluator. Given the following {dependencies}, assess the response below and return a JSON object with two fields:
 
             - `"score"`: an integer between {score_range[0]} and {score_range[1]}, {score_explanation}.
             - `"reason"`: a brief explanation for why the score was given. This must mention specific strengths or shortcomings, referencing relevant details from the input. Do **not** quote the score itself in the explanation.
@@ -79,12 +84,14 @@ class MEvalTemplate:
             {parameters}
             {additional_context}
 
-            ---
-            **Example JSON:**
+
+            <output_example>            
             {{
                 "score": {score_range[0]},
                 "reason": "your concise and informative reason here"
             }}
+            </output_example>
+            </instructions>
 
             JSON:
             """

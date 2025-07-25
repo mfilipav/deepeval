@@ -42,7 +42,7 @@ metric_geval = GEval(
 )
 metric_meval = MEval(
     name="Usefullness",
-    criteria="Does `actual_output` answer user's question (`input`), are the facts in the answer relevant to the user question, are they factually correct, and do they not contradict the facts in the context? If no context is provided, automatically assign a score of 0.",
+    criteria="Does `actual_output` answer user's question (`input`), are the facts in the answer relevant to the user question, are they factually correct, and do they not contradict the facts in the context?",
     evaluation_params=[
         LLMTestCaseParams.INPUT,
         LLMTestCaseParams.ACTUAL_OUTPUT,

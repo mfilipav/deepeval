@@ -19,7 +19,7 @@ from synthetic_dataset.eval_metrics import (
 
 # WARNING: change value when experimenting with different combinations of:
 #   metrics, test cases or evaluator parameters
-EXPERIMENT_NAME = "simple_meval_answer_relevancy"
+EXPERIMENT_NAME = "full_meval_answer_relevancy"
 
 EXPERIMENTS_DIR = "./synthetic_dataset/experiments/"
 DATASET_FILE_PATH = "./synthetic_dataset/dataset_mf_test_cases.json"
@@ -42,7 +42,8 @@ print(f"Loaded {len(test_cases)} test cases from {DATASET_FILE_PATH}")
 # 2. Run evaluation experiment
 experiment_result_path = f"{EXPERIMENTS_DIR}{EXPERIMENT_NAME}"
 res = evaluate(
-    test_cases=[test_cases[0], test_cases[10]],
+    test_cases=test_cases,
+    # test_cases=[test_cases[0], test_cases[10]],
     # test_cases=[test_cases[0], test_cases[10], test_cases[7]],
     metrics=[metric_meval, metric_answer_relevancy],
     async_config=AsyncConfig(run_async=True),

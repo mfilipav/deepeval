@@ -33,4 +33,3 @@ class QABot:
 
         content = response.choices[0].message.content.strip()
         return content
-

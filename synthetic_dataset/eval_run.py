@@ -35,7 +35,7 @@ dataset.add_test_cases_from_json_file(
     context_key_name="context",
 )
 test_cases = dataset.test_cases
-print(f"Loaded {len(test_cases)} test cases from dataset_mf_test_cases.json")
+print(f"Loaded {len(test_cases)} test cases from {DATASET_FILE_PATH}")
 # print(f"First test case: {test_cases[10]}")
 
 

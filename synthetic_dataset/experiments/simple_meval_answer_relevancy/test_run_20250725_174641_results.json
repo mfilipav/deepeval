@@ -1,0 +1,54 @@
+[
+    {
+        "test_case_name": "test_case_10",
+        "test_success": false,
+        "input": "Can you tell me about my last period?",
+        "actual_output": "Your last period started on April 13, 2025, and ended on April 19, 2025, lasting about 4 days. Your cycle length is around 27 days on average, with a typical bleeding intensity of about 11. If you have any specific concerns or questions about your period, feel free to ask!",
+        "metric_name": "Usefullness [MEval]",
+        "metric_success": false,
+        "metric_score": 0.37848572909583644,
+        "metric_threshold": 0.6,
+        "evaluation_cost": 0.00074,
+        "evaluation_model": "gpt-4.1-mini",
+        "reason": "The response attempts to address the user's question about their last period by providing dates and cycle length, but it contains inaccuracies and inconsistencies with the context. Specifically, the actual output states the last period started on April 13 and ended on April 19, lasting about 4 days, whereas the context shows StartMenses as April 14 and EndMenses as April 18, with a menses length of 5 days. The bleeding intensity is given as 11 in the output, but the context shows a mean bleeding intensity of 10.17 and a total menses score of 11, which may not directly correspond. These factual inaccuracies reduce the clarity and correctness of the answer, leading to a moderate score."
+    },
+    {
+        "test_case_name": "test_case_10",
+        "test_success": false,
+        "input": "Can you tell me about my last period?",
+        "actual_output": "Your last period started on April 13, 2025, and ended on April 19, 2025, lasting about 4 days. Your cycle length is around 27 days on average, with a typical bleeding intensity of about 11. If you have any specific concerns or questions about your period, feel free to ask!",
+        "metric_name": "Answer Relevancy",
+        "metric_success": true,
+        "metric_score": 1.0,
+        "metric_threshold": 0.7,
+        "evaluation_cost": 0.0008468,
+        "evaluation_model": "gpt-4.1-mini",
+        "reason": "The score is 1.00 because the response fully addresses the question without any irrelevant information, providing a clear and focused answer."
+    },
+    {
+        "test_case_name": "test_case_0",
+        "test_success": true,
+        "input": "My vulva has been super itchy",
+        "actual_output": "Itchy vulva can be caused by things like irritation, infections, or allergies. Since it's been bothering you, it might be a good idea to keep the area clean and avoid any new soaps or products that could be irritating. If the itching persists, worsens, or you notice other symptoms like unusual discharge or pain, I recommend seeing a healthcare provider to get it checked out. They can help figure out the cause and suggest the right treatment.",
+        "metric_name": "Usefullness [MEval]",
+        "metric_success": true,
+        "metric_score": 0.8970687767181726,
+        "metric_threshold": 0.6,
+        "evaluation_cost": 0.0005444,
+        "evaluation_model": "gpt-4.1-mini",
+        "reason": "The response directly addresses the user's concern about vulva itchiness by listing common causes and advising on hygiene and when to seek medical care, which is relevant and factually correct. It does not contradict any contextual information provided. However, it could be improved by briefly considering the user's age and menstrual context to tailor advice more specifically."
+    },
+    {
+        "test_case_name": "test_case_0",
+        "test_success": true,
+        "input": "My vulva has been super itchy",
+        "actual_output": "Itchy vulva can be caused by things like irritation, infections, or allergies. Since it's been bothering you, it might be a good idea to keep the area clean and avoid any new soaps or products that could be irritating. If the itching persists, worsens, or you notice other symptoms like unusual discharge or pain, I recommend seeing a healthcare provider to get it checked out. They can help figure out the cause and suggest the right treatment.",
+        "metric_name": "Answer Relevancy",
+        "metric_success": true,
+        "metric_score": 1.0,
+        "metric_threshold": 0.7,
+        "evaluation_cost": 0.001,
+        "evaluation_model": "gpt-4.1-mini",
+        "reason": "The score is 1.00 because the response directly addresses the user's concern about vulva itchiness without including any irrelevant information. It is clear, focused, and fully relevant to the input."
+    }
+]

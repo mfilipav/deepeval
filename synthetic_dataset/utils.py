@@ -1,5 +1,7 @@
+import json
 import matplotlib.pyplot as plt
 import pandas as pd
+from deepeval.evaluate.types import EvaluationResult
 
 
 def print_eval_results(res):
@@ -15,7 +17,7 @@ def print_eval_results(res):
                 f"Cost: {mdata.evaluation_cost}, Reason: {mdata.reason}")
         print("********************************************\n")
 
-def results_to_df(res: dict) -> pd.DataFrame:
+def results_to_df(res: EvaluationResult, json_file_path: str) -> pd.DataFrame:
     """Convert evaluation results to a pandas DataFrame."""
     rows = []
     for test_res in res.test_results:
@@ -29,12 +31,46 @@ def results_to_df(res: dict) -> pd.DataFrame:
                     'metric_name': mdata.name,
                     'metric_success': mdata.success,
                     'metric_score': mdata.score,
+                    'metric_threshold': mdata.threshold,
                     'evaluation_cost': mdata.evaluation_cost,
+                    'evaluation_model': mdata.evaluation_model,
                     'reason': mdata.reason
                 }
                 rows.append(row)
-    return pd.DataFrame(rows)
+    
+    df = pd.DataFrame(rows)
 
+    metric_summary = df.groupby('metric_name').agg({
+        'metric_score': ['mean', 'std', 'min', 'max'],
+        'metric_success': 'mean',
+        'evaluation_cost': 'sum'
+    }).round(3)
+    results_summary = {
+        'total_test_cases': int(df['test_case_name'].nunique()),
+        'total_metrics_evaluated': len(df),
+        'average_score_all_metrics': round(df['metric_score'].mean(), 3),
+        'overall_success_rate': round(df['metric_success'].mean(), 3),
+        'metric_summary': {
+            metric_name: {
+                'metric_score_mean': stats[('metric_score', 'mean')],
+                'metric_score_std': stats[('metric_score', 'std')],
+                'metric_score_min': stats[('metric_score', 'min')],
+                'metric_score_max': stats[('metric_score', 'max')],
+                'metric_success_rate': stats[('metric_success', 'mean')],
+                'evaluation_cost_total': stats[('evaluation_cost', 'sum')]
+            }
+            for metric_name, stats in metric_summary.iterrows()
+        }
+    }
+
+    if json_file_path:
+        with open(json_file_path, 'w', encoding='utf-8') as f:
+            json.dump(rows, f, indent=4, ensure_ascii=False)
+        
+        json_output_path = json_file_path.replace('.json', '_summary.json')
+        with open(json_output_path, 'w', encoding='utf-8') as f:
+            json.dump(results_summary, f, indent=4, ensure_ascii=False)
+    return df
 
 def visualize_eval_results(df: pd.DataFrame, eval_results_figure_path: str):
     # Set up the plotting style
@@ -81,19 +117,3 @@ def visualize_eval_results(df: pd.DataFrame, eval_results_figure_path: str):
     plt.tight_layout()
     plt.savefig(eval_results_figure_path, dpi=300, bbox_inches='tight')
     # plt.show()  # uncomment to display the plots interactively
-    
-    # Additional detailed analysis
-    print("\nDetailed Analysis:")
-    print("=" * 50)
-    print(f"Total test cases: {df['test_case_name'].nunique()}")
-    print(f"Total metrics evaluated: {len(df)}")
-    print(f"Average score across all metrics: {df['metric_score'].mean():.3f}")
-    print(f"Overall success rate: {df['metric_success'].mean():.3f}")
-    
-    print("\nMetric Summary:")
-    metric_summary = df.groupby('metric_name').agg({
-        'metric_score': ['mean', 'std', 'min', 'max'],
-        'metric_success': 'mean',
-        'evaluation_cost': 'sum'
-    }).round(3)
-    print(metric_summary)

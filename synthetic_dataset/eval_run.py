@@ -3,7 +3,7 @@ import time
 from deepeval import evaluate
 from deepeval.dataset import EvaluationDataset
 from deepeval.evaluate.configs import AsyncConfig, DisplayConfig
-import pandas as pd
+from deepeval.evaluate.types import EvaluationResult
 from synthetic_dataset.utils import (
     visualize_eval_results,
     print_eval_results,
@@ -19,7 +19,7 @@ from synthetic_dataset.eval_metrics import (
 
 # WARNING: change value when experimenting with different combinations of:
 #   metrics, test cases or evaluator parameters
-EXPERIMENT_NAME = "full_meval_answer_relevancy"
+EXPERIMENT_NAME = "simple_meval_answer_relevancy"
 
 EXPERIMENTS_DIR = "./synthetic_dataset/experiments/"
 DATASET_FILE_PATH = "./synthetic_dataset/dataset_mf_test_cases.json"
@@ -41,9 +41,9 @@ print(f"Loaded {len(test_cases)} test cases from {DATASET_FILE_PATH}")
 
 # 2. Run evaluation experiment
 experiment_result_path = f"{EXPERIMENTS_DIR}{EXPERIMENT_NAME}"
-res = evaluate(
-    test_cases=test_cases,
-    # test_cases=[test_cases[0], test_cases[10]],
+res: EvaluationResult = evaluate(
+    # test_cases=test_cases,
+    test_cases=[test_cases[0], test_cases[10]],
     # test_cases=[test_cases[0], test_cases[10], test_cases[7]],
     metrics=[metric_meval, metric_answer_relevancy],
     async_config=AsyncConfig(run_async=True),
@@ -55,7 +55,7 @@ ts = time.strftime("%Y%m%d_%H%M%S")
 
 
 # 3. Save eval results to JSON file and plot a figure
-df = results_to_df(res)
+df = results_to_df(res, json_file_path=f"{experiment_result_path}/test_run_{ts}_results.json")
 print("\nPandas DataFrame:")
 print(df.to_string(index=False))
 

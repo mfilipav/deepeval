@@ -3,19 +3,20 @@ from deepeval.test_case import LLMTestCase, LLMTestCaseParams
 from deepeval.models import GPTModel
 
 MODEL = "gpt-4.1-mini"
-
+VERBOSE = False
+ASYNC = True
 
 metric_answer_relevancy = AnswerRelevancyMetric(
     threshold=0.7,
     model=MODEL,
     include_reason=True,
-    verbose_mode=False,
+    verbose_mode=VERBOSE,
 )
 metric_faithfullness = FaithfulnessMetric(
     threshold=0.7,
     model=MODEL,
     include_reason=True,
-    verbose_mode=True,
+    verbose_mode=VERBOSE,
 )
 metric_geval = GEval(
     name="Correctness",
@@ -37,8 +38,8 @@ metric_geval = GEval(
     ),
     threshold=0.6,
     strict_mode=False,
-    async_mode=True,
-    verbose_mode=True,
+    async_mode=ASYNC,
+    verbose_mode=VERBOSE,
 )
 metric_meval = MEval(
     name="Usefullness",
@@ -49,12 +50,13 @@ metric_meval = MEval(
         # LLMTestCaseParams.EXPECTED_OUTPUT,
         LLMTestCaseParams.CONTEXT,
     ],
-    model=GPTModel(
-        model_name=MODEL,
-        temperature=0.0,
-    ),
+    model=MODEL,
+    # model=GPTModel(
+    #     model_name=MODEL,
+    #     temperature=0.0,
+    # ),
     threshold=0.6,
     strict_mode=False,
-    async_mode=True,
-    verbose_mode=False,
+    async_mode=ASYNC,
+    verbose_mode=VERBOSE,
 )

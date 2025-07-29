@@ -54,6 +54,35 @@ def copy_metrics(
         Union[BaseMetric, BaseConversationalMetric, BaseMultimodalMetric]
     ],
 ) -> List[Union[BaseMetric, BaseMultimodalMetric, BaseConversationalMetric]]:
+    """
+    The copy_metrics function is designed to create deep copies of metric objects, 
+    specifically those that are instances of BaseMetric, BaseConversationalMetric, 
+    or BaseMultimodalMetric. It takes a list of these metric objects and returns a 
+    new list containing copies of each metric.
+
+    For each metric in the input list, the function first determines its 
+    class using type(metric). It then retrieves the metric's attributes 
+    as a dictionary using vars(metric). To ensure that only valid constructor 
+    arguments are used when creating the copy, the function inspects the method 
+    resolution order (__mro__) of the metric's class. This provides a tuple 
+    of the class and its superclasses, allowing the function to gather all 
+    possible __init__ parameters from the entire inheritance chain.
+
+    By iterating through each superclass, the function uses inspect.signature 
+    to get the constructor's parameter names and accumulates them in the valid_params list. 
+    After collecting all possible parameter names, it converts the list 
+    to a set to remove duplicates. The function then builds a dictionary 
+    of arguments (valid_args) by selecting only those attributes from 
+    the metric that match the valid parameter names.
+
+    Finally, the function creates a new instance of the metric's class 
+    using the filtered arguments and appends it to the copied_metrics list. 
+    This process is repeated for each metric in the input, resulting in 
+    a list of copied metric objects that preserve the original 
+    attributes and initialization logic. This approach helps avoid issues with 
+    extra or missing arguments and ensures compatibility with complex inheritance structures.
+
+    """
     copied_metrics = []
     for metric in metrics:
         metric_class = type(metric)

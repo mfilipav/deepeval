@@ -290,7 +290,7 @@ def evaluate(
             if async_config.run_async:
                 loop = get_or_create_event_loop()
                 test_results = loop.run_until_complete(
-                    a_execute_test_cases(
+                    future=a_execute_test_cases(
                         test_cases,
                         metrics,
                         identifier=identifier,

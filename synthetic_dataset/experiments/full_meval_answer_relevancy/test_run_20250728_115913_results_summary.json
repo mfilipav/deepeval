@@ -1,0 +1,24 @@
+{
+    "total_test_cases": 16,
+    "total_metrics_evaluated": 32,
+    "average_score_all_metrics": 0.843,
+    "overall_success_rate": 0.844,
+    "metric_summary": {
+        "Answer Relevancy": {
+            "metric_score_mean": 0.839,
+            "metric_score_std": 0.21,
+            "metric_score_min": 0.25,
+            "metric_score_max": 1.0,
+            "metric_success_rate": 0.812,
+            "evaluation_cost_total": 0.016
+        },
+        "Usefullness [MEval]": {
+            "metric_score_mean": 0.847,
+            "metric_score_std": 0.182,
+            "metric_score_min": 0.357,
+            "metric_score_max": 0.999,
+            "metric_success_rate": 0.875,
+            "evaluation_cost_total": 0.009
+        }
+    }
+}

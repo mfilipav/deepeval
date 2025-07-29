@@ -19,23 +19,21 @@ metric_faithfullness = FaithfulnessMetric(
     verbose_mode=VERBOSE,
 )
 metric_geval = GEval(
-    name="Correctness",
-    evaluation_steps=[
-        "Read the 'input' and the 'actual_output'",
-        "Check whether the facts in 'actual_output' contradicts any facts in 'expected_output' and user data 'context'",
-        "Penalize if the 'actual_output' contradicts any user data in the context.",
-        "Vague or polite language, and contradicting OPINIONS are OK"
-    ],
+    name="Usefullness",
+    criteria="Does `actual_output` answer user's question (`input`), are the facts in the answer relevant to the user question, are they factually correct, and do they not contradict the facts in the context?",
+    # evaluation_steps=[
+    #     "Read the 'input' and the 'actual_output'",
+    #     "Check whether the facts in 'actual_output' contradicts any facts in 'expected_output' and user data 'context'",
+    #     "Penalize if the 'actual_output' contradicts any user data in the context.",
+    #     "Vague or polite language, and contradicting OPINIONS are OK"
+    # ],
     evaluation_params=[
         LLMTestCaseParams.INPUT,
         LLMTestCaseParams.ACTUAL_OUTPUT,
         # LLMTestCaseParams.EXPECTED_OUTPUT,
         LLMTestCaseParams.CONTEXT,
     ],
-    model=GPTModel(
-        model_name=MODEL,
-        temperature=0.0,
-    ),
+    model=MODEL,
     threshold=0.6,
     strict_mode=False,
     async_mode=ASYNC,
@@ -51,10 +49,6 @@ metric_meval = MEval(
         LLMTestCaseParams.CONTEXT,
     ],
     model=MODEL,
-    # model=GPTModel(
-    #     model_name=MODEL,
-    #     temperature=0.0,
-    # ),
     threshold=0.6,
     strict_mode=False,
     async_mode=ASYNC,

@@ -12,17 +12,17 @@ from synthetic_dataset.utils import (
 from synthetic_dataset.eval_metrics import (
     metric_answer_relevancy,
     # metric_faithfullness,
-    # metric_geval,
+    metric_geval,
     metric_meval,
     # metric_latency
 )
 
 # WARNING: change value when experimenting with different combinations of:
 #   metrics, test cases or evaluator parameters
-EXPERIMENT_NAME = "simple_meval_answer_relevancy"
-
+EXPERIMENT_NAME = "full_meval_answer_relevancy"
 EXPERIMENTS_DIR = "./synthetic_dataset/experiments/"
 DATASET_FILE_PATH = "./synthetic_dataset/dataset_mf_test_cases.json"
+
 
 # 1. Prepare test cases from the dataset
 dataset = EvaluationDataset()
@@ -42,11 +42,15 @@ print(f"Loaded {len(test_cases)} test cases from {DATASET_FILE_PATH}")
 # 2. Run evaluation experiment
 experiment_result_path = f"{EXPERIMENTS_DIR}{EXPERIMENT_NAME}"
 res: EvaluationResult = evaluate(
-    # test_cases=test_cases,
-    test_cases=[test_cases[0], test_cases[10]],
+    test_cases=test_cases,
+    # test_cases=[test_cases[0], test_cases[10]],
     # test_cases=[test_cases[0], test_cases[10], test_cases[7]],
-    metrics=[metric_meval, metric_answer_relevancy],
-    async_config=AsyncConfig(run_async=True),
+    metrics=[metric_geval, metric_meval, metric_answer_relevancy],
+    async_config=AsyncConfig(
+        run_async=True,
+        throttle_value=0,
+        max_concurrent=20
+    ),
     display_config=DisplayConfig(
         file_output_dir=experiment_result_path
     ),

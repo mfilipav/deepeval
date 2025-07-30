@@ -1,0 +1,178 @@
+[
+    {
+        "num_cases": 1,
+        "num_metrics": 1,
+        "max_concurrent": 1,
+        "total_time": 0.42220592498779297,
+        "sequential_estimate": 0.4,
+        "speedup": 0.947404989666038,
+        "efficiency_concurrent": 0.947404989666038,
+        "efficiency_theoretical": 0.947404989666038,
+        "theoretical_min": 0.4
+    },
+    {
+        "num_cases": 1,
+        "num_metrics": 1,
+        "max_concurrent": 2,
+        "total_time": 0.4185171127319336,
+        "sequential_estimate": 0.4,
+        "speedup": 0.955755422732752,
+        "efficiency_concurrent": 0.477877711366376,
+        "efficiency_theoretical": 0.955755422732752,
+        "theoretical_min": 0.4
+    },
+    {
+        "num_cases": 1,
+        "num_metrics": 1,
+        "max_concurrent": 20,
+        "total_time": 0.4227151870727539,
+        "sequential_estimate": 0.4,
+        "speedup": 0.9462636125518614,
+        "efficiency_concurrent": 0.04731318062759307,
+        "efficiency_theoretical": 0.9462636125518614,
+        "theoretical_min": 0.4
+    },
+    {
+        "num_cases": 1,
+        "num_metrics": 1,
+        "max_concurrent": 100,
+        "total_time": 0.4209280014038086,
+        "sequential_estimate": 0.4,
+        "speedup": 0.950281280090626,
+        "efficiency_concurrent": 0.009502812800906259,
+        "efficiency_theoretical": 0.950281280090626,
+        "theoretical_min": 0.4
+    },
+    {
+        "num_cases": 2,
+        "num_metrics": 2,
+        "max_concurrent": 1,
+        "total_time": 1.6481552124023438,
+        "sequential_estimate": 1.6,
+        "speedup": 0.9707823559092151,
+        "efficiency_concurrent": 0.9707823559092151,
+        "efficiency_theoretical": 0.24269558897730378,
+        "theoretical_min": 0.4
+    },
+    {
+        "num_cases": 2,
+        "num_metrics": 2,
+        "max_concurrent": 2,
+        "total_time": 1.654433012008667,
+        "sequential_estimate": 1.6,
+        "speedup": 0.9670986908423816,
+        "efficiency_concurrent": 0.4835493454211908,
+        "efficiency_theoretical": 0.2417746727105954,
+        "theoretical_min": 0.4
+    },
+    {
+        "num_cases": 2,
+        "num_metrics": 2,
+        "max_concurrent": 20,
+        "total_time": 1.6486201286315918,
+        "sequential_estimate": 1.6,
+        "speedup": 0.9705085921327747,
+        "efficiency_concurrent": 0.048525429606638734,
+        "efficiency_theoretical": 0.24262714803319368,
+        "theoretical_min": 0.4
+    },
+    {
+        "num_cases": 2,
+        "num_metrics": 2,
+        "max_concurrent": 100,
+        "total_time": 1.6295249462127686,
+        "sequential_estimate": 1.6,
+        "speedup": 0.9818812554656569,
+        "efficiency_concurrent": 0.009818812554656569,
+        "efficiency_theoretical": 0.2454703138664142,
+        "theoretical_min": 0.4
+    },
+    {
+        "num_cases": 20,
+        "num_metrics": 5,
+        "max_concurrent": 1,
+        "total_time": 40.99455213546753,
+        "sequential_estimate": 40.0,
+        "speedup": 0.9757394072221839,
+        "efficiency_concurrent": 0.9757394072221839,
+        "efficiency_theoretical": 0.009757394072221839,
+        "theoretical_min": 0.4
+    },
+    {
+        "num_cases": 20,
+        "num_metrics": 5,
+        "max_concurrent": 2,
+        "total_time": 41.082277059555054,
+        "sequential_estimate": 40.0,
+        "speedup": 0.9736558648395723,
+        "efficiency_concurrent": 0.48682793241978617,
+        "efficiency_theoretical": 0.009736558648395724,
+        "theoretical_min": 0.4
+    },
+    {
+        "num_cases": 20,
+        "num_metrics": 5,
+        "max_concurrent": 20,
+        "total_time": 41.0138680934906,
+        "sequential_estimate": 40.0,
+        "speedup": 0.9752798714039967,
+        "efficiency_concurrent": 0.04876399357019984,
+        "efficiency_theoretical": 0.009752798714039968,
+        "theoretical_min": 0.4
+    },
+    {
+        "num_cases": 20,
+        "num_metrics": 5,
+        "max_concurrent": 100,
+        "total_time": 41.28459978103638,
+        "sequential_estimate": 40.0,
+        "speedup": 0.9688842864445922,
+        "efficiency_concurrent": 0.009688842864445922,
+        "efficiency_theoretical": 0.009688842864445922,
+        "theoretical_min": 0.4
+    },
+    {
+        "num_cases": 5,
+        "num_metrics": 20,
+        "max_concurrent": 1,
+        "total_time": 41.92944931983948,
+        "sequential_estimate": 40.0,
+        "speedup": 0.953983432858334,
+        "efficiency_concurrent": 0.953983432858334,
+        "efficiency_theoretical": 0.00953983432858334,
+        "theoretical_min": 0.4
+    },
+    {
+        "num_cases": 5,
+        "num_metrics": 20,
+        "max_concurrent": 2,
+        "total_time": 41.573039293289185,
+        "sequential_estimate": 40.0,
+        "speedup": 0.962162032893681,
+        "efficiency_concurrent": 0.4810810164468405,
+        "efficiency_theoretical": 0.009621620328936811,
+        "theoretical_min": 0.4
+    },
+    {
+        "num_cases": 5,
+        "num_metrics": 20,
+        "max_concurrent": 20,
+        "total_time": 41.840651750564575,
+        "sequential_estimate": 40.0,
+        "speedup": 0.9560080526102288,
+        "efficiency_concurrent": 0.04780040263051144,
+        "efficiency_theoretical": 0.009560080526102289,
+        "theoretical_min": 0.4
+    },
+    {
+        "num_cases": 5,
+        "num_metrics": 20,
+        "max_concurrent": 100,
+        "total_time": 41.94648599624634,
+        "sequential_estimate": 40.0,
+        "speedup": 0.9535959699599027,
+        "efficiency_concurrent": 0.009535959699599026,
+        "efficiency_theoretical": 0.009535959699599026,
+        "theoretical_min": 0.4
+    }
+]

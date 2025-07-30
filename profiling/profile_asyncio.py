@@ -178,7 +178,7 @@ def profiling(concurrency_levels) -> List[dict]:
             print("\n")
     
     # Write results to JSON file
-    json_filename = f"profile_asyncio_{time.strftime('%Y%m%d_%H%M%S')}_results.json"
+    json_filename = f"profiling/profile_asyncio_{time.strftime('%Y%m%d_%H%M%S')}_results.json"
     with open(json_filename, 'w') as f:
         json.dump(results, f, indent=4)
     print(f"Results saved to {json_filename}")
@@ -281,7 +281,7 @@ def create_timing_plot(results: List[dict], concurrency_levels: List[int]):
     plt.tight_layout()
     
     # Save plot
-    plot_filename = f"profile_asyncio_{time.strftime('%Y%m%d_%H%M%S')}_results.png"
+    plot_filename = f"profiling/profile_asyncio_{time.strftime('%Y%m%d_%H%M%S')}_results.png"
     plt.savefig(plot_filename, dpi=300, bbox_inches='tight')
     print(f"Plot saved to {plot_filename}")
     
